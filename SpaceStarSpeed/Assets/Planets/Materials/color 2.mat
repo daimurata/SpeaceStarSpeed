@@ -80,8 +80,8 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distortionscale: 1
-    - _Distortionspeed: 1
+    - _Distortionscale: 0
+    - _Distortionspeed: 2
     - _DstBlend: 0
     - _EmissionScaleUI: 0
     - _Enabledistortion: 0
@@ -96,17 +96,17 @@ Material:
     - _Maintextureintensity: 1
     - _Metallic: 0
     - _Mode: 0
-    - _Noisescale: 50
+    - _Noisescale: 0
     - _OcclusionStrength: 1
-    - _Outerfresnelintensity: 1
+    - _Outerfresnelintensity: 0.681
     - _Parallax: 0.02
-    - _Power: 0.66
-    - _Pulseamplitude: 1
+    - _Power: 0.69
+    - _Pulseamplitude: 0.2
     - _Pulsefrequency: 10
-    - _Pulseoffset: 0.1
+    - _Pulseoffset: 0.02
     - _Pulsephase: 1
     - _Scale: 1
-    - _Secondarytextureintensity: 1
+    - _Secondarytextureintensity: 0
     - _Sharpennoise: 0
     - _SrcBlend: 1
     - _TessMax: 25

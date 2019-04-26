@@ -1,12 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-/// <summary>
-/// 画像のファイルです
-/// 必要な画像データをココに入れる
-/// </summary>
-public class Image : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class Scene : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,6 +13,9 @@ public class Image : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("nextScene");
+        }
     }
 }

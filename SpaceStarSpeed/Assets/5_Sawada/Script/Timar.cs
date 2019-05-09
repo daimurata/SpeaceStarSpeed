@@ -35,6 +35,7 @@ public class Timar : MonoBehaviour
         images[val1].sprite = numberSprites[Convert.ToInt32(str.Substring(0, 1))];
         images[val2].sprite = numberSprites[Convert.ToInt32(str.Substring(1, 1))];
     }
+    //タイマーに合わせて画像を更新する
     IEnumerator TimerStart()
     {
         while (timeCount >= 0)
@@ -57,6 +58,7 @@ public class Timar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //リザルトシーンに移動する
         if (Input.GetKeyDown(KeyCode.S))
         {
             SceneManager.LoadScene("New Scene");

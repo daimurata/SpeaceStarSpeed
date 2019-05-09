@@ -128,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 182717813}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abd37e3938206f142adc2c9412b07da7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -222,7 +222,7 @@ Animator:
   m_GameObject: {fileID: 593819487}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a044133eb61cfa4f92e89db7e400c3b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -247,7 +247,7 @@ Animator:
   m_GameObject: {fileID: 615426086}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1146f08824e3a0c41b9656097c67f14f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -341,7 +341,7 @@ Animator:
   m_GameObject: {fileID: 719324895}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1327e66269bcb13408f26b7aefe363e8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -420,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 2033187782, guid: d73d8221ab0ad0847b8b479fab6b0403, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 71be86abeaf182041ae49f457c3d0d3f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73d8221ab0ad0847b8b479fab6b0403, type: 3}
 --- !u!1 &1141921687
@@ -521,7 +521,7 @@ Animator:
   m_GameObject: {fileID: 1183871451}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7547acfb1fec70541b151f6d99c2eba5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -886,7 +886,7 @@ PrefabInstance:
     - target: {fileID: 2033187782, guid: d73d8221ab0ad0847b8b479fab6b0403, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 52da2394ba17d7f41933af4ccf179c95, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73d8221ab0ad0847b8b479fab6b0403, type: 3}
 --- !u!1 &1876801135 stripped
@@ -905,7 +905,7 @@ Animator:
   m_GameObject: {fileID: 1876801135}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae021dc2b8851d4b802be0a6f103126, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -930,7 +930,7 @@ Animator:
   m_GameObject: {fileID: 1909515170}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3fa3cfc4df529d42bfdd897e1b7d840, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1162,7 +1162,7 @@ Animator:
   m_GameObject: {fileID: 700904210999806940}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7bb2c894288f614b8c4a0e2405b39b6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1256,7 +1256,7 @@ Animator:
   m_GameObject: {fileID: 5008542773017377692}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab521196747badb42ad55827899371ee, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1350,7 +1350,7 @@ Animator:
   m_GameObject: {fileID: 6478978153625918163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b092fa5687f3f0049acdcef45ddbb2ae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1513,7 +1513,7 @@ Animator:
   m_GameObject: {fileID: 8161445466345277062}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d33d776daf3701644b082121ab8abcfe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1538,7 +1538,7 @@ Animator:
   m_GameObject: {fileID: 8296654184346554479}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8554c92e0ba30a94ca052b2f7436d021, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -48,7 +48,7 @@ public class Timar : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             timeCount += 1.0f;
             timepoint = (int)timeCount;
-            Debug.Log(timeCount);
+            //Debug.Log(timeCount);
            
         }
     
@@ -61,7 +61,7 @@ public class Timar : MonoBehaviour
         //リザルトシーンに移動する
         if (Input.GetKeyDown(KeyCode.S))
         {
-            SceneManager.LoadScene("New Scene");
+            SceneManager.LoadScene("result");
 
         }
     }

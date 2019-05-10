@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/5_Sawada/Scene/New Scene.unity
-    guid: fab6be919e278d74bbf0e11ce3c83182
+    path: Assets/0_Master/Scene/MAIN.unity
+    guid: 76345901e847b33458465f20fa56cd0c
   - enabled: 1
-    path: Assets/5_Sawada/Scene/Timar.unity
-    guid: ca3eecfede2ff69499d1fc47121a8451
+    path: Assets/0_Master/Scene/result.unity
+    guid: 47e768e0bfe908540aa6aa83386ac88d
   m_configObjects: {}

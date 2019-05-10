@@ -15,7 +15,7 @@ public class Scene : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Timar");
+            SceneManager.LoadScene("MAIN");
         }
     }
 }

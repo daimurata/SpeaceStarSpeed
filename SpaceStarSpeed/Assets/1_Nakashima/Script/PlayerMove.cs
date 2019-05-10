@@ -22,7 +22,11 @@ public class PlayerMove : MonoBehaviour
     {
         player = GetComponent<GameObject>();
 
-        rb = GetComponent<Rigidbody>();
+        
+
+        //重力
+        rb = this.GetComponent<Rigidbody>();
+        rb.useGravity = true;   //重力ありに
 
         Speed = 7f;
     }
@@ -37,14 +41,15 @@ public class PlayerMove : MonoBehaviour
         //移動時に何かエフェクトを入れてどこに向かっているのかを分かるようにする？的な感じ
 
         //上下左右前後の移動になる追加予定、上下運動に対してはON,OFFの切り替えがしやすいようなプログラムを書く
+        //注）Playerは現在星...角度を変更してあるので「upとdown」から「forwardとback」に変更
         //前後左右移動
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(Vector3.up * Speed,ForceMode.Force);           
+            rb.AddForce(Vector3.forward * Speed,ForceMode.Force);           
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(Vector3.down * Speed, ForceMode.Force);
+            rb.AddForce(Vector3.back * Speed, ForceMode.Force);
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -54,6 +59,21 @@ public class PlayerMove : MonoBehaviour
         {
             rb.AddForce(Vector3.right * Speed, ForceMode.Force);
         }
+
+        //重力の変更
+        //加速
+        if (Input.GetKey(KeyCode.E))
+        {
+            rb.AddForce(0, -10, 0);
+
+        }
+        //減速
+        if (Input.GetKey(KeyCode.Q))
+        {
+            rb.AddForce(0, 10, 0);
+
+        }
+
         //上下移動
         //if (Input.GetKey(KeyCode.UpArrow))
         //{
@@ -98,8 +118,11 @@ public class PlayerMove : MonoBehaviour
 
         }
     }
+
+    //移動制限
     void Clamp()
     {
+        //PlayerのPosition
         player_pos = transform.position;
 
         player_pos.x = Mathf.Clamp(player_pos.x, -5f, 5f);

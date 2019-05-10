@@ -15,7 +15,7 @@ public class Scene : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("nextScene");
+            SceneManager.LoadScene("MAIN");
         }
     }
 }

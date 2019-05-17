@@ -32,9 +32,9 @@ public class CameraMoveScript : MonoBehaviour
     void CameraMove()
     {
         if(CameraChangeBool == true)
-        {
-            
+        {  
             float step = speed * Time.deltaTime;
+            //targetに向かってSubCameraが移動する
             SubCamera.transform.position = Vector3.MoveTowards(SubCamera.transform.position, target, step);
 
             //ifで○○まで行ったらChangeCameraを呼び出す処理、targetと同じポジションを指定

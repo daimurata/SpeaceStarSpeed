@@ -55,8 +55,6 @@ public class AlphaChange : MonoBehaviour
                 //trueの方のif分に切り替え
                 a_flag = true;
             }
-        }
-        
-        
+        }       
     }
 }

@@ -11,6 +11,8 @@ public class AlphaChange : MonoBehaviour
     float AlphaColor = 1;
     //RGBを入れる変数
     float red, green, blue;
+    //時間を入れる変数Time.deltatimeに×やつね、別々で変わる速度を変更するため
+    public float time;
     //bool
     bool a_flag;
     // Start is called before the first frame update
@@ -33,7 +35,7 @@ public class AlphaChange : MonoBehaviour
         if (a_flag == true)
         {
             //徐々に値から引く
-            AlphaColor -= 0.5f * Time.deltaTime;
+            AlphaColor -= time * Time.deltaTime;
             //α値が0より下になったらfalseにする
             if (AlphaColor < 0)
             {
@@ -46,7 +48,7 @@ public class AlphaChange : MonoBehaviour
         if(a_flag == false)
         {
             //徐々に値を足す
-            AlphaColor += 0.5f * Time.deltaTime;
+            AlphaColor += time * Time.deltaTime;
             //α値が1を超えたらtrueにする
             if(AlphaColor > 1)
             {

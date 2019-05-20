@@ -21,18 +21,20 @@ public class Ranking : MonoBehaviour
     int point5 = Timar.timepoint5;
     int point6 = Timar.timepoint6;
     //ランキングを5位まで表示
-    string[] ranking = { "ランキング1位", "ランキング2位", "ランキング3位", "ランキング4位", "ランキング5位" };
-    string[] ranking2 = { "ランキング2.1位", "ランキング2.2位", "ランキング2.3位", "ランキング2.4位", "ランキング2.5位" };
-    string[] ranking3 = { "ランキング3.1位", "ランキング3.2位", "ランキング3.3位", "ランキング3.4位", "ランキング3.5位" };
-    string[] ranking4 = { "ランキング4.1位", "ランキング4.2位", "ランキング4.3位", "ランキング4.4位", "ランキング4.5位" };
-    string[] ranking5 = { "ランキング5.1位", "ランキング5.2位", "ランキング5.3位", "ランキング5.4位", "ランキング5.5位" };
-    string[] ranking6 = { "ランキング6.1位", "ランキング6.2位", "ランキング6.3位", "ランキング6.4位", "ランキング6.5位" };
-    int[] rankingValue = new int[5];
-    int[] rankingValue2 = new int[5];
-    int[] rankingValue3 = new int[5];
-    int[] rankingValue4 = new int[5];
-    int[] rankingValue5 = new int[5];
-    int[] rankingValue6 = new int[5];
+    //下のデータを引き継ぐ
+    public static  string[] ranking = { "ランキング1位", "ランキング2位", "ランキング3位", "ランキング4位", "ランキング5位" };
+    public static string[] ranking2 = { "ランキング2.1位", "ランキング2.2位", "ランキング2.3位", "ランキング2.4位", "ランキング2.5位" };
+    public static string[] ranking3 = { "ランキング3.1位", "ランキング3.2位", "ランキング3.3位", "ランキング3.4位", "ランキング3.5位" };
+    public static string[] ranking4 = { "ランキング4.1位", "ランキング4.2位", "ランキング4.3位", "ランキング4.4位", "ランキング4.5位" };
+    public static string[] ranking5 = { "ランキング5.1位", "ランキング5.2位", "ランキング5.3位", "ランキング5.4位", "ランキング5.5位" };
+    public static string[] ranking6 = { "ランキング6.1位", "ランキング6.2位", "ランキング6.3位", "ランキング6.4位", "ランキング6.5位" };
+    public static   int[] rankingValue = new int[5];
+    public static int[] rankingValue2 = new int[5];
+    public static int[] rankingValue3 = new int[5];
+    public static int[] rankingValue4 = new int[5];
+    public static int[] rankingValue5 = new int[5];
+    public static int[] rankingValue6 = new int[5];
+    //ここまでのデータを引き継ぐ
     //表示するテキスト
     [SerializeField]
     Text[] rankingText = new Text[5];

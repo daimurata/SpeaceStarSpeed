@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 46101690}
   - component: {fileID: 46101689}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1238,7 +1238,7 @@ GameObject:
   - component: {fileID: 58964045}
   - component: {fileID: 58964044}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 87732652}
   - component: {fileID: 87732651}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2911,7 +2911,7 @@ GameObject:
   - component: {fileID: 163039377}
   - component: {fileID: 163039376}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2985,7 +2985,7 @@ GameObject:
   - component: {fileID: 167743767}
   - component: {fileID: 167743766}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3133,7 +3133,7 @@ GameObject:
   - component: {fileID: 176084496}
   - component: {fileID: 176084495}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3742,7 +3742,7 @@ GameObject:
   - component: {fileID: 262379778}
   - component: {fileID: 262379777}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3816,7 +3816,7 @@ GameObject:
   - component: {fileID: 266495218}
   - component: {fileID: 266495217}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3923,7 +3923,7 @@ GameObject:
   - component: {fileID: 279085498}
   - component: {fileID: 279085497}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4071,7 +4071,7 @@ GameObject:
   - component: {fileID: 283378737}
   - component: {fileID: 283378736}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5154,7 +5154,7 @@ GameObject:
   - component: {fileID: 337127172}
   - component: {fileID: 337127171}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5695,7 +5695,7 @@ GameObject:
   - component: {fileID: 374347269}
   - component: {fileID: 374347268}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5769,7 +5769,7 @@ GameObject:
   - component: {fileID: 376336880}
   - component: {fileID: 376336879}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5875,7 +5875,7 @@ GameObject:
   - component: {fileID: 380942723}
   - component: {fileID: 380942722}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5949,7 +5949,7 @@ GameObject:
   - component: {fileID: 386372839}
   - component: {fileID: 386372838}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6023,7 +6023,7 @@ GameObject:
   - component: {fileID: 386536273}
   - component: {fileID: 386536272}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6130,7 +6130,7 @@ GameObject:
   - component: {fileID: 391891238}
   - component: {fileID: 391891237}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6204,7 +6204,7 @@ GameObject:
   - component: {fileID: 395530854}
   - component: {fileID: 395530853}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6533,7 +6533,7 @@ GameObject:
   - component: {fileID: 404316722}
   - component: {fileID: 404316721}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6703,7 +6703,7 @@ GameObject:
   - component: {fileID: 432233535}
   - component: {fileID: 432233534}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6936,109 +6936,127 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Count_Dow:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1496363181}
+  - {fileID: 767693011}
+  - {fileID: 62962594}
+  - {fileID: 743589672}
   Count_Zero1:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 400681974}
+  - {fileID: 1502821525}
+  - {fileID: 554707158}
   Count_Zero2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1976411125}
+  - {fileID: 1817826319}
+  - {fileID: 1637178070}
   Count_1:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1474876211}
+  - {fileID: 1247914766}
+  - {fileID: 1596311762}
   Count_2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1593243688}
+  - {fileID: 1730228252}
+  - {fileID: 1363834269}
   Count_3:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 792162510}
+  - {fileID: 653895482}
+  - {fileID: 763087626}
   Star_1:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1851929700}
+  - {fileID: 386536270}
+  - {fileID: 391891235}
+  - {fileID: 788735429}
+  - {fileID: 539678003}
+  - {fileID: 167743764}
+  - {fileID: 933858182}
+  - {fileID: 1403471279}
+  - {fileID: 683887843}
+  - {fileID: 1192735367}
+  - {fileID: 46101687}
+  - {fileID: 2146858080}
   StarEF_1:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 551683765}
+  - {fileID: 2027319215}
+  - {fileID: 176084493}
+  - {fileID: 283378734}
+  - {fileID: 1295387236}
+  - {fileID: 380942720}
+  - {fileID: 475187534}
+  - {fileID: 1479515476}
+  - {fileID: 404316719}
+  - {fileID: 976491896}
+  - {fileID: 337127169}
+  - {fileID: 1429501918}
   Star_2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 58964042}
+  - {fileID: 374347266}
+  - {fileID: 1890705810}
+  - {fileID: 432233532}
+  - {fileID: 689938464}
+  - {fileID: 1766608686}
+  - {fileID: 1913439494}
+  - {fileID: 1361296839}
+  - {fileID: 2079276192}
+  - {fileID: 1579824066}
+  - {fileID: 1022274507}
+  - {fileID: 1719297681}
   StarEF_2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2068306254}
+  - {fileID: 583522538}
+  - {fileID: 1940048800}
+  - {fileID: 1382219252}
+  - {fileID: 2067542932}
+  - {fileID: 266495215}
+  - {fileID: 1168425209}
+  - {fileID: 1369031275}
+  - {fileID: 1988947428}
+  - {fileID: 755971607}
+  - {fileID: 386372836}
+  - {fileID: 262379775}
   Star_3:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 859747986}
+  - {fileID: 395530851}
+  - {fileID: 978927542}
+  - {fileID: 768836116}
+  - {fileID: 376336877}
+  - {fileID: 1690133405}
+  - {fileID: 2028377281}
+  - {fileID: 569771386}
+  - {fileID: 1942126996}
+  - {fileID: 87732649}
+  - {fileID: 606179288}
+  - {fileID: 1400758478}
   StarEF_3:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1831079003}
+  - {fileID: 1001819758}
+  - {fileID: 1868319406}
+  - {fileID: 1442132878}
+  - {fileID: 1393770481}
+  - {fileID: 1985751599}
+  - {fileID: 1781068372}
+  - {fileID: 868703649}
+  - {fileID: 722774829}
+  - {fileID: 279085495}
+  - {fileID: 163039374}
+  - {fileID: 1677110762}
   Start_Change: 0
+  Time_Count: 4
+  Alpha_Zero:
+  - 0
+  - 0
+  - 0
+  Alpha_One:
+  - 0
+  - 0
+  - 0
+  Alpha_Second:
+  - 0
+  - 0
+  - 0
+  Alpha_Third:
+  - 0
+  - 0
+  - 0
+  Alpha_Speed: 0.05
 --- !u!1 &436848648
 GameObject:
   m_ObjectHideFlags: 0
@@ -7582,7 +7600,7 @@ GameObject:
   - component: {fileID: 475187537}
   - component: {fileID: 475187536}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8599,7 +8617,7 @@ GameObject:
   - component: {fileID: 539678006}
   - component: {fileID: 539678005}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8886,7 +8904,7 @@ GameObject:
   - component: {fileID: 551683768}
   - component: {fileID: 551683767}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9240,7 +9258,7 @@ GameObject:
   - component: {fileID: 569771389}
   - component: {fileID: 569771388}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9494,7 +9512,7 @@ GameObject:
   - component: {fileID: 583522541}
   - component: {fileID: 583522540}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9938,7 +9956,7 @@ GameObject:
   - component: {fileID: 606179291}
   - component: {fileID: 606179290}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11614,7 +11632,7 @@ GameObject:
   - component: {fileID: 683887846}
   - component: {fileID: 683887845}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11762,7 +11780,7 @@ GameObject:
   - component: {fileID: 689938467}
   - component: {fileID: 689938466}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12559,7 +12577,7 @@ GameObject:
   - component: {fileID: 722774832}
   - component: {fileID: 722774831}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12784,7 +12802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &743589673
 Transform:
   m_ObjectHideFlags: 0
@@ -12993,7 +13011,7 @@ GameObject:
   - component: {fileID: 755971610}
   - component: {fileID: 755971609}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13421,7 +13439,7 @@ GameObject:
   - component: {fileID: 768836119}
   - component: {fileID: 768836118}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13818,7 +13836,7 @@ GameObject:
   - component: {fileID: 788735432}
   - component: {fileID: 788735431}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15053,7 +15071,7 @@ GameObject:
   - component: {fileID: 859747989}
   - component: {fileID: 859747988}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15423,7 +15441,7 @@ GameObject:
   - component: {fileID: 868703652}
   - component: {fileID: 868703651}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16058,7 +16076,7 @@ GameObject:
   - component: {fileID: 933858185}
   - component: {fileID: 933858184}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17340,7 +17358,7 @@ GameObject:
   - component: {fileID: 976491899}
   - component: {fileID: 976491898}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17414,7 +17432,7 @@ GameObject:
   - component: {fileID: 978927545}
   - component: {fileID: 978927544}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17915,7 +17933,7 @@ GameObject:
   - component: {fileID: 1001819761}
   - component: {fileID: 1001819760}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18095,7 +18113,7 @@ GameObject:
   - component: {fileID: 1022274510}
   - component: {fileID: 1022274509}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19836,7 +19854,7 @@ GameObject:
   - component: {fileID: 1168425212}
   - component: {fileID: 1168425211}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20244,7 +20262,7 @@ GameObject:
   - component: {fileID: 1192735370}
   - component: {fileID: 1192735369}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22020,7 +22038,7 @@ GameObject:
   - component: {fileID: 1295387239}
   - component: {fileID: 1295387238}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23240,7 +23258,7 @@ GameObject:
   - component: {fileID: 1361296842}
   - component: {fileID: 1361296841}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23494,7 +23512,7 @@ GameObject:
   - component: {fileID: 1369031278}
   - component: {fileID: 1369031277}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24012,7 +24030,7 @@ GameObject:
   - component: {fileID: 1382219255}
   - component: {fileID: 1382219254}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24266,7 +24284,7 @@ GameObject:
   - component: {fileID: 1393770484}
   - component: {fileID: 1393770483}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24554,7 +24572,7 @@ GameObject:
   - component: {fileID: 1400758481}
   - component: {fileID: 1400758480}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24702,7 +24720,7 @@ GameObject:
   - component: {fileID: 1403471282}
   - component: {fileID: 1403471281}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25201,7 +25219,7 @@ GameObject:
   - component: {fileID: 1429501921}
   - component: {fileID: 1429501920}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25382,7 +25400,7 @@ GameObject:
   - component: {fileID: 1442132881}
   - component: {fileID: 1442132880}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25922,7 +25940,7 @@ GameObject:
   - component: {fileID: 1479515479}
   - component: {fileID: 1479515478}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27103,7 +27121,7 @@ GameObject:
   - component: {fileID: 1579824069}
   - component: {fileID: 1579824068}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28163,7 +28181,7 @@ GameObject:
   - component: {fileID: 1637178073}
   - component: {fileID: 1637178072}
   m_Layer: 5
-  m_Name: G_03
+  m_Name: O_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28927,7 +28945,7 @@ GameObject:
   - component: {fileID: 1677110765}
   - component: {fileID: 1677110764}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29248,7 +29266,7 @@ GameObject:
   - component: {fileID: 1690133408}
   - component: {fileID: 1690133407}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29766,7 +29784,7 @@ GameObject:
   - component: {fileID: 1719297684}
   - component: {fileID: 1719297683}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30520,7 +30538,7 @@ GameObject:
   - component: {fileID: 1766608689}
   - component: {fileID: 1766608688}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30668,7 +30686,7 @@ GameObject:
   - component: {fileID: 1781068375}
   - component: {fileID: 1781068374}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31233,7 +31251,7 @@ GameObject:
   - component: {fileID: 1817826322}
   - component: {fileID: 1817826321}
   m_Layer: 5
-  m_Name: G_02
+  m_Name: O_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31455,7 +31473,7 @@ GameObject:
   - component: {fileID: 1831079006}
   - component: {fileID: 1831079005}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31817,7 +31835,7 @@ GameObject:
   - component: {fileID: 1851929703}
   - component: {fileID: 1851929702}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31923,7 +31941,7 @@ GameObject:
   - component: {fileID: 1868319409}
   - component: {fileID: 1868319408}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32284,7 +32302,7 @@ GameObject:
   - component: {fileID: 1890705813}
   - component: {fileID: 1890705812}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32580,7 +32598,7 @@ GameObject:
   - component: {fileID: 1913439497}
   - component: {fileID: 1913439496}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32983,7 +33001,7 @@ GameObject:
   - component: {fileID: 1940048803}
   - component: {fileID: 1940048802}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33057,7 +33075,7 @@ GameObject:
   - component: {fileID: 1942126999}
   - component: {fileID: 1942126998}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33824,7 +33842,7 @@ GameObject:
   - component: {fileID: 1985751602}
   - component: {fileID: 1985751601}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Third_Star_02_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33972,7 +33990,7 @@ GameObject:
   - component: {fileID: 1988947431}
   - component: {fileID: 1988947430}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34655,7 +34673,7 @@ GameObject:
   - component: {fileID: 2027319218}
   - component: {fileID: 2027319217}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: One_Star_02_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34729,7 +34747,7 @@ GameObject:
   - component: {fileID: 2028377284}
   - component: {fileID: 2028377283}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Third_Star_01_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35113,7 +35131,7 @@ GameObject:
   - component: {fileID: 2067542935}
   - component: {fileID: 2067542934}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35261,7 +35279,7 @@ GameObject:
   - component: {fileID: 2068306257}
   - component: {fileID: 2068306256}
   m_Layer: 5
-  m_Name: Star_02
+  m_Name: Second_Star_02_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35409,7 +35427,7 @@ GameObject:
   - component: {fileID: 2079276195}
   - component: {fileID: 2079276194}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: Second_Star_01_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36465,7 +36483,7 @@ GameObject:
   - component: {fileID: 2146858083}
   - component: {fileID: 2146858082}
   m_Layer: 5
-  m_Name: Star_01
+  m_Name: One_Star_01_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

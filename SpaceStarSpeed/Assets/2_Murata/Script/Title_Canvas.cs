@@ -172,9 +172,11 @@ public class Title_Canvas : MonoBehaviour
         }
 
         //点滅処理
-
         if (Change[1] == true)
         {
+            Alpha_Speed[2] = 0.5f;
+            Alpha[2] -= Alpha_Speed[2];
+
             //エフェクト点滅
             Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//1
             Text_Effect[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//2

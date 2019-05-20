@@ -4,31 +4,55 @@ using UnityEngine;
 
 public class MainCamera : MonoBehaviour
 {
-    public GameObject M_Ca;
+    public GameObject M_Ca; //カメラ
+    public GameObject player;   //Player
 
-    public Vector3 Ca_pos;
-    public Rigidbody rb;
-    // Start is called before the first frame update
+    public Vector3 Ca_pos;  //カメラ座標
+    public Vector3 P_pos;   //Player座標
+    public Vector3 offset; //Playerとカメラの距離
+    private Vector3 Goal;   //ゴールカメラワーク
+
     void Start()
     {
-        M_Ca = GetComponent<GameObject>();
+        //カメラとPlayerのオブジェクト取得
+        M_Ca = GameObject.Find("Main Camera");
+        player = GameObject.Find("Star");
 
-        rb = GetComponent<Rigidbody>();
-        Transform Ca_pos = GameObject.Find("Main Camera").transform;
+        //カメラとPlayerの距離を求める(間隔は５)
+        offset = M_Ca.transform.position - player.transform.position;
+
+        //※カメラの初期位置は今後追加予定
+
+        //ゴール時のカメラの位置決め
+        Goal = new Vector3(0, 100f, 0);
     }
-
-    // Update is called once per frame
+    
+    void LateUpdate()
+    {
+        
+    }
     void Update()
     {
-        if(Ca_pos.y < 200)
+        //PlayerとMain Caneraの位置を常に把握
+        //カメラはy座標のみ
+        P_pos = player.transform.position;
+        Ca_pos.y = player.transform.position.y;
+
+        //カメラ　Playerに追従
+        M_Ca.transform.position = Ca_pos + offset;
+
+        //カメラが高さ200になったら
+        if (Ca_pos.y < 100)
         {
+            //カメラの位置を止める処理へ移動
             Ca_Stop();
         }
     }
+    //カメラの位置停止
     void Ca_Stop()
     {
-        Debug.Log("あたたたーーーー");
-        //Ca_pos.y = 200;
-        rb.useGravity = false;
+        Debug.Log("End of the Earth");
+        //カメラを指定の座標にとどめる
+        M_Ca.transform.position = Goal;
     }
 }

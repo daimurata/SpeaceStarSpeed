@@ -69,44 +69,54 @@ public class PlayerMove : MonoBehaviour
         //}
 
         //パターン２（素早く）
-        if (Input.GetKey(KeyCode.W))
-        {
-            player_pos.z += 5f * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            player_pos.z -= 5f * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            player_pos.x -= 5f * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            player_pos.x += 5f * Time.deltaTime;
-        }
-        Pmove.position = player_pos;
-
-        ////パターン３（PS4）
-        //float h = Input.GetAxis("Horizontal");
-        //float v = Input.GetAxis("Vertical");
         //if (Input.GetKey(KeyCode.W))
         //{
-        //    player_pos.z += 5f * -h * Time.deltaTime;
+        //    player_pos.z += 5f * Time.deltaTime;
         //}
         //if (Input.GetKey(KeyCode.S))
         //{
-        //    player_pos.z -= 5f * h * Time.deltaTime;
+        //    player_pos.z -= 5f * Time.deltaTime;
         //}
         //if (Input.GetKey(KeyCode.A))
         //{
-        //    player_pos.x -= 5f * -v *  Time.deltaTime;
+        //    player_pos.x -= 5f * Time.deltaTime;
         //}
         //if (Input.GetKey(KeyCode.D))
         //{
-        //    player_pos.x += 5f * v * Time.deltaTime;
+        //    player_pos.x += 5f * Time.deltaTime;
         //}
         //Pmove.position = player_pos;
+
+        //パターン３（PS4）
+        //左右移動の値
+        float h = Input.GetAxis("Horizontal");
+        //上下移動の値
+        float v = Input.GetAxis("Vertical");
+
+        //右移動
+        if (h > 0.5)
+        {
+            player_pos.x -= 5f * -h * Time.deltaTime;
+        }
+        //左移動
+        if (h < -0.5)
+        {
+            player_pos.x += 5f * h * Time.deltaTime;
+        }
+
+
+        //上移動
+        if (v > 0.5)
+        {
+            player_pos.z += 5f * v * Time.deltaTime;
+        }
+        //上移動
+        if (v < -0.5)
+        {
+            player_pos.z -= 5f * -v * Time.deltaTime;
+        }
+
+        Pmove.position = player_pos;
 
 
         //重力の変更

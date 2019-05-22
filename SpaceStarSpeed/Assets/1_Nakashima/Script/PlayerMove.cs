@@ -18,6 +18,11 @@ public class PlayerMove : MonoBehaviour
     public Rigidbody rb;
     //速度が足りているかの判定する為の変数
     public float Pmagnitude = 0.05f;
+
+    //音源
+    public SoundManager soundManager;
+    // soundManager.Soundtekito();のようなものをSEを入れたい場所に入れていく
+    
     // Start is called before the first frame update
     void Start()
     {

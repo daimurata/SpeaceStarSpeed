@@ -6,8 +6,8 @@ using System;
 public class Rankingseni : MonoBehaviour
 {
 
-    //0
-    int startpoint = 0;
+    
+
     //分
     int[] minute = new int[5];
     //秒

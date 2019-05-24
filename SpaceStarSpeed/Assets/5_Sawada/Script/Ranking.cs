@@ -6,7 +6,6 @@ using System;
 using UnityEngine.SceneManagement;
 public class Ranking : MonoBehaviour
 {
-    
     //0
     int startpoint = 0;
     //分
@@ -35,18 +34,19 @@ public class Ranking : MonoBehaviour
     public static int[] rankingValue5 = new int[5];
     public static int[] rankingValue6 = new int[5];
     //ここまでのデータを引き継ぐ
-    //表示するテキスト
-    [SerializeField]
-    Text[] rankingText = new Text[5];
-    //表示するイメージ
+ 
+      //表示するイメージ
     [SerializeField]
     Image[] images = new Image[20];
     //表示するスプライト
     [SerializeField]
     Sprite[] numberSprites = new Sprite[11];
+    //Newの文字を５個登録
+    public GameObject[] Newobject = new GameObject[5];
     // Start is called before the first frame update
     void Start()
     {
+        
         //クリア時間が0ならば1時間にする
         if (point == 0)
         {
@@ -78,13 +78,64 @@ public class Ranking : MonoBehaviour
         GetRanking();
         //ランキングを書き込む
         SetRanking(point,point2,point3,point4,point5,point6);
-        for (int i = 0; i < rankingText.Length; i++)
+        for (int i = 0; i < Newobject.Length; i++)
         {
-
-
-           //リザルト画面用
+            
+            //リザルト１用
+            //"  "の部分を使用するリザルト画面の名前に変える
             if (SceneManager.GetActiveScene().name == "result")
             {
+                //ランキングの順位に合わせてnewの文字を表示する
+                if (rankingValue[0]==point)
+                {
+                    Newobject[0].SetActive(true);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }else
+                if (rankingValue[1]==point)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(true);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }else
+                if (rankingValue[2]==point)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(true);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }else
+                if (rankingValue[3]==point)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(true);
+                    Newobject[4].SetActive(false);
+                }else
+                if (rankingValue[4]==point)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(true);
+                }
+                else
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+
+                }
+
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingValue[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -98,6 +149,7 @@ public class Ranking : MonoBehaviour
                 SetNumbers(second[2], 8, 9);
                 SetNumbers(second[3], 12, 13);
                 SetNumbers(second[4], 16, 17);
+             
                 //クリア時間が0か100ならば何も表示しない
                 if (rankingValue[0] == 0 || rankingValue[0] == 3600)
                 {
@@ -124,9 +176,66 @@ public class Ranking : MonoBehaviour
                     setnumber0(minute[4], 18, 19);
                     setnumber0(second[4], 16, 17);
                 }
+
             }
+            //リザルト２用
+            //"  "の部分を使用するリザルト画面の名前に変える
             if (SceneManager.GetActiveScene().name == "result 2")
             {
+                //ランキングの順位に合わせてnewの文字を表示する
+                if (rankingValue2[0] == point2)
+                {
+                    Newobject[0].SetActive(true);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                   if (rankingValue2[1] == point2)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(true);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                   if (rankingValue[2] == point2)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(true);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                   if (rankingValue2[3] == point2)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(true);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                   if (rankingValue2[4] == point2)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(true);
+                }
+                else
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+
+                }
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingValue2[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -167,8 +276,65 @@ public class Ranking : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
+            //リザルト３用意
+            //"  "の部分を使用するリザルト画面の名前に変える
             if (SceneManager.GetActiveScene().name == "result 3")
             {
+                //ランキングの順位に合わせてnewの文字を表示する
+                if (rankingValue3[0] == point3)
+                {
+                    Newobject[0].SetActive(true);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue3[1] == point3)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(true);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue3[2] == point3)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(true);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue3[3] == point3)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(true);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue3[4] == point3)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(true);
+                }
+                else
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+
+                }
+
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingValue3[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -209,8 +375,64 @@ public class Ranking : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
+            //リザルト４用
+            //"  "の部分を使用するリザルト画面の名前に変える
             if (SceneManager.GetActiveScene().name == "result 4")
             {
+                //ランキングの順位に合わせてnewの文字を表示する
+                if (rankingValue4[0] == point4)
+                {
+                    Newobject[0].SetActive(true);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue4[1] == point4)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(true);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue4[2] == point4)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(true);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue4[3] == point4)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(true);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue4[4] == point4)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(true);
+                }
+                else
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+
+                }
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingValue4[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -251,8 +473,64 @@ public class Ranking : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
+            //リザルト５用
+            //"  "の部分を使用するリザルト画面の名前に変える
             if (SceneManager.GetActiveScene().name == "result 5")
             {
+                //ランキングの順位に合わせてnewの文字を表示する
+                if (rankingValue5[0] == point5)
+                {
+                    Newobject[0].SetActive(true);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue5[1] == point5)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(true);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue5[2] == point5)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(true);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue5[3] == point5)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(true);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                  if (rankingValue5[4] == point5)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(true);
+                }
+                else
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+
+                }
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingValue5[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -293,8 +571,64 @@ public class Ranking : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
+            //リザルト６用
+            //"  "の部分を使用するリザルト画面の名前に変える
             if (SceneManager.GetActiveScene().name == "result 6")
             {
+                //ランキングの順位に合わせてnewの文字を表示する
+                if (rankingValue6[0] == point6)
+                {
+                    Newobject[0].SetActive(true);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                 if (rankingValue6[1] == point6)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(true);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                 if (rankingValue6[2] == point6)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(true);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                 if (rankingValue6[3] == point6)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(true);
+                    Newobject[4].SetActive(false);
+                }
+                else
+                 if (rankingValue6[4] == point6)
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(true);
+                }
+                else
+                {
+                    Newobject[0].SetActive(false);
+                    Newobject[1].SetActive(false);
+                    Newobject[2].SetActive(false);
+                    Newobject[3].SetActive(false);
+                    Newobject[4].SetActive(false);
+
+                }
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingValue6[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -308,6 +642,7 @@ public class Ranking : MonoBehaviour
                 SetNumbers(second[2], 8, 9);
                 SetNumbers(second[3], 12, 13);
                 SetNumbers(second[4], 16, 17);
+               
                 //クリア時間が0か100ならば何も表示しない
                 if (rankingValue6[0] == 0 || rankingValue6[0] == 3600)
                 {
@@ -334,10 +669,10 @@ public class Ranking : MonoBehaviour
                     setnumber0(minute[4], 18, 19);
                     setnumber0(second[4], 16, 17);
                 }
+            
             }
-            //順位を表示
-            rankingText[i].text = (i + 1) + "位";
-          
+
+     
         }
      
 }
@@ -408,152 +743,173 @@ public class Ranking : MonoBehaviour
 
         }
     }
-    void SetRanking(int _value,int _value2,int _value3,int _value4,int _value5,int _value6)
+    void SetRanking(int _value, int _value2, int _value3, int _value4, int _value5, int _value6)
     {
 
         //ステージ１のランキングの書き込み用
         for (int i = 0; i < ranking.Length; i++)
         {
-            //ランキングに0が表示されていたら0を無視して新しい記録を入れる
+            //ランキングに0が登録されていたら0を無視して新しい記録を入れる
             if (_value * rankingValue[i] == startpoint)
             {
-                var chand =rankingValue[i];
+            
+
+
+                var chand = rankingValue[i];
                 rankingValue[i] = _value;
-                _value = chand;
-              
+                 _value = chand;
+               
             }
-            //それ以外の場合はランキングに表示されている数よりクリア時間が短い場合はランキングを更新する
             else
             {
+                //ランキングに記載されていた数よりも小さければランキングを更新する
                 if (_value < rankingValue[i])
                 {
+                   
                     var change = rankingValue[i];
                     rankingValue[i] = _value;
-                    _value = change;
-
+                   _value =change;
                 }
             }
-            
         }
+    
+        
         //ステージ２のランキングの書き込み用
         for (int i = 0; i < ranking2.Length; i++)
         {
-            //ランキングに0が表示されていたら0を無視して新しい記録を入れる
+            //ランキングに0が登録されていたら0を無視して新しい記録を入れる
             if (_value2 * rankingValue2[i] == startpoint)
             {
-                var chand = rankingValue2[i];
+                var change = rankingValue2[i];
                 rankingValue2[i] = _value2;
-                _value2 = chand;
-
+              
+                
+                _value = change;
             }
-            //それ以外の場合はランキングに表示されている数よりクリア時間が短い場合はランキングを更新する
             else
             {
+                //ランキングに記載されていた数よりも小さければランキングを更新する
                 if (_value2 < rankingValue2[i])
                 {
+                  
                     var change = rankingValue2[i];
                     rankingValue2[i] = _value2;
+                 
+                   
                     _value2 = change;
 
                 }
             }
+            
 
         }
         //ステージ３のランキングの書き込み用
         for (int i = 0; i < ranking3.Length; i++)
         {
-            //ランキングに0が表示されていたら0を無視して新しい記録を入れる
+            //ランキングに0が登録されていたら0を無視して新しい記録を入れる
             if (_value3 * rankingValue3[i] == startpoint)
             {
-                var chand = rankingValue3[i];
+                var change = rankingValue3[i];
                 rankingValue3[i] = _value3;
-                _value3 = chand;
-
+              
+             
+                _value3 = change;
             }
-            //それ以外の場合はランキングに表示されている数よりクリア時間が短い場合はランキングを更新する
             else
             {
+                //ランキングに記載されていた数よりも小さければランキングを更新する
                 if (_value3 < rankingValue3[i])
                 {
-                    var change = rankingValue3[i];
+                    var chand = rankingValue3[i];
                     rankingValue3[i] = _value3;
-                    _value3 = change;
-
+                  
+                   
+                    _value3 = chand;
                 }
             }
+            
 
         }
         //ステージ４のランキングの書き込み用
         for (int i = 0; i < ranking4.Length; i++)
         {
-            //ランキングに0が表示されていたら0を無視して新しい記録を入れる
+            //ランキングに0が登録されていたら0を無視して新しい記録を入れる
             if (_value4 * rankingValue4[i] == startpoint)
             {
-                var chand = rankingValue4[i];
+                var change = rankingValue4[i];
                 rankingValue4[i] = _value4;
-                _value4 = chand;
-
+              
+              
+                _value4 = change;
             }
-            //それ以外の場合はランキングに表示されている数よりクリア時間が短い場合はランキングを更新する
-            else
-            {
+            else {
+                //ランキングに記載されていた数よりも小さければランキングを更新する
                 if (_value4 < rankingValue4[i])
                 {
                     var change = rankingValue4[i];
                     rankingValue4[i] = _value4;
+                  
+                  
+                   
                     _value4 = change;
-
                 }
+
+                
             }
 
         }
         //ステージ５のランキングの書き込み用
         for (int i = 0; i < ranking5.Length; i++)
         {
-            //ランキングに0が表示されていたら0を無視して新しい記録を入れる
+            //ランキングに0が登録されていたら0を無視して新しい記録を入れる
             if (_value5 * rankingValue5[i] == startpoint)
             {
-                var chand = rankingValue5[i];
+                var change = rankingValue5[i];
                 rankingValue5[i] = _value5;
-                _value5 = chand;
-
+             
+                _value5 = change;
             }
-            //それ以外の場合はランキングに表示されている数よりクリア時間が短い場合はランキングを更新する
-            else
-            {
+            else {
+                //ランキングに記載されていた数よりも小さければランキングを更新する
                 if (_value5 < rankingValue5[i])
                 {
                     var change = rankingValue5[i];
                     rankingValue5[i] = _value5;
+                  
+                   
                     _value5 = change;
-
                 }
+                  
+                
             }
 
         }
         //ステージ６のランキングの書き込み用
         for (int i = 0; i < ranking6.Length; i++)
         {
-            //ランキングに0が表示されていたら0を無視して新しい記録を入れる
+            //ランキングに0が登録されていたら0を無視して新しい記録を入れる
             if (_value6 * rankingValue6[i] == startpoint)
             {
-                var chand = rankingValue6[i];
+                var change = rankingValue6[i];
                 rankingValue6[i] = _value6;
-                _value6 = chand;
-
+                
+              
+                _value6 = change;
             }
-            //それ以外の場合はランキングに表示されている数よりクリア時間が短い場合はランキングを更新する
             else
             {
+                //ランキングに記載されていた数よりも小さければランキングを更新する
                 if (_value6 < rankingValue6[i])
                 {
                     var change = rankingValue6[i];
                     rankingValue6[i] = _value6;
+                
+                 
                     _value6 = change;
 
                 }
-            }
 
+            }
         }
 
 
@@ -561,15 +917,14 @@ public class Ranking : MonoBehaviour
         //ステージ１のランキングの入れ替えた値を保存
         for (int i = 0; i < ranking.Length; i++)
         {
-          
+            
             PlayerPrefs.SetInt(ranking[i],rankingValue[i]);
+        
            
-
         }
         //ステージ２のランキングの入れ替えた値を保存
         for (int i = 0; i < ranking2.Length; i++)
         {
-
             PlayerPrefs.SetInt(ranking2[i], rankingValue2[i]);
 
 
@@ -577,7 +932,7 @@ public class Ranking : MonoBehaviour
         //ステージ３のランキングの入れ替えた値を保存
         for (int i = 0; i < ranking3.Length; i++)
         {
-
+          
             PlayerPrefs.SetInt(ranking3[i], rankingValue3[i]);
 
 
@@ -585,7 +940,6 @@ public class Ranking : MonoBehaviour
         //ステージ４のランキングの入れ替えた値を保存
         for (int i = 0; i < ranking4.Length; i++)
         {
-
             PlayerPrefs.SetInt(ranking4[i], rankingValue4[i]);
 
 
@@ -593,7 +947,7 @@ public class Ranking : MonoBehaviour
         //ステージ５のランキングの入れ替えた値を保存
         for (int i = 0; i < ranking5.Length; i++)
         {
-
+            
             PlayerPrefs.SetInt(ranking5[i], rankingValue5[i]);
 
 
@@ -601,7 +955,7 @@ public class Ranking : MonoBehaviour
         //ステージ６のランキングの入れ替えた値を保存
         for (int i = 0; i < ranking6.Length; i++)
         {
-
+          
             PlayerPrefs.SetInt(ranking6[i], rankingValue6[i]);
 
 
@@ -609,8 +963,5 @@ public class Ranking : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }

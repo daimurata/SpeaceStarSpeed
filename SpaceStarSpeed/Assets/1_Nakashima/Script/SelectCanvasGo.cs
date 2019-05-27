@@ -15,11 +15,8 @@ public class SelectCanvasGo : MonoBehaviour
     public Animator StageAnimator;
     //AnimetorのBoolにあった名前を入れる（こうしないと別々でスクリプトを組まないといけなくなる）
     public string[] AnimatorName = new string[2];
-
-    //すごい雑だけど、試しでSetActiveいじる
-    //選んだステージ以外falseにする、それをアタッチする
-    public GameObject[] obj = new GameObject[6];
-    
+    //MainCanvasを覆い隠す為に使用します
+    public Image BackImage;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +36,7 @@ public class SelectCanvasGo : MonoBehaviour
     public void ChangeInput()
     {
         var eventSystem = Main.GetComponent<EventSystem>();
-
+        
         //YES/NOの選択肢をSetActive＝Trueにして、その選択によってイベントを加える
         SelectCanvas.SetActive(true);
         //Mainの方のCanvasを操作できないようにする
@@ -47,6 +44,8 @@ public class SelectCanvasGo : MonoBehaviour
 
         //星が前に出てくるアニメーション
         StageAnimator.SetTrigger(AnimatorName[0]);
+        //画像のアルファ値を上げる
+        BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
     }
 
     public void BackCanvas()
@@ -60,6 +59,8 @@ public class SelectCanvasGo : MonoBehaviour
 
         //星が元の場所に戻るアニメーション
         StageAnimator.SetTrigger(AnimatorName[1]);
+        //画像のアルファ値を下げる
+        BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
     }
 
 }

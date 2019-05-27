@@ -17,7 +17,13 @@ public class BackCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //×ボタンでも戻ることができるようにするため
+        if (Input.GetButtonDown("Cancel"))
+        {
+            //現時点のCanvasをfalseにする
+            YesNoCanvas.SetActive(false);
+            MainCanvas.SetActive(true);
+        }
     }
     public void CanvasDestroy()
     {

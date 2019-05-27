@@ -16,6 +16,6 @@ public class PlanetRotation : MonoBehaviour
     void Update()
     {
         //回す
-        transform.Rotate(0,rotatespeed,rotatespeed);
+        transform.Rotate(0,rotatespeed,0);
     }
 }

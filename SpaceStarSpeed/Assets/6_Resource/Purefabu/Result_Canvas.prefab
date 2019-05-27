@@ -6493,6 +6493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3625205653124111504}
+  - component: {fileID: 935744406}
   m_Layer: 0
   m_Name: RANKING
   m_TagString: Untagged
@@ -6521,6 +6522,117 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &935744406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726387219208399907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd32bc161c868d344984d9c86dcc06a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 7
+  Blink_Body:
+  - {fileID: 6016592156896767847}
+  - {fileID: 840708115233653184}
+  - {fileID: 3648672940089637056}
+  - {fileID: 8988596755629072034}
+  - {fileID: 2486613950930330781}
+  - {fileID: 1441620772653289214}
+  - {fileID: 5709751166960439149}
+  Blink_Effect:
+  - {fileID: 1919665722604001710}
+  - {fileID: 5124122005957859304}
+  - {fileID: 2781886187768719781}
+  - {fileID: 2567960321307539176}
+  - {fileID: 1288376078663807937}
+  - {fileID: 3222831076918791319}
+  - {fileID: 1833136043322508568}
+  Red_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Speed_Body:
+  - 0.11
+  - 0.12
+  - 0.13
+  - 0.14
+  - 0.15
+  - 0.16
+  - 0.17
+  Speed_Effect:
+  - 0.17
+  - 0.16
+  - 0.15
+  - 0.14
+  - 0.13
+  - 0.12
+  - 0.11
+  Change_Body: 00000000000000
+  Change_Effect: 00000000000000
 --- !u!1 &739045666335264733
 GameObject:
   m_ObjectHideFlags: 0
@@ -7506,6 +7618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7759247050535784030}
+  - component: {fileID: 338287005}
   m_Layer: 0
   m_Name: Congratulations!!
   m_TagString: Untagged
@@ -7544,6 +7657,237 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338287005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356381613787130356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd32bc161c868d344984d9c86dcc06a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 17
+  Blink_Body:
+  - {fileID: 4921683730029991424}
+  - {fileID: 2329106005475594349}
+  - {fileID: 2318669578318016666}
+  - {fileID: 1169376884454780779}
+  - {fileID: 3200020252580106434}
+  - {fileID: 807037775275416879}
+  - {fileID: 7952961032453183011}
+  - {fileID: 8577667109436779042}
+  - {fileID: 9155019863166719489}
+  - {fileID: 794835043773373604}
+  - {fileID: 7530199464480479714}
+  - {fileID: 6075562746532934204}
+  - {fileID: 6722473691196522210}
+  - {fileID: 7316934801620314298}
+  - {fileID: 1076761356305817096}
+  - {fileID: 4932582990233589816}
+  - {fileID: 417733508314434206}
+  Blink_Effect:
+  - {fileID: 1951783146911705985}
+  - {fileID: 5829253620359637506}
+  - {fileID: 7674497156983986061}
+  - {fileID: 6856881775998922320}
+  - {fileID: 8009460603442263444}
+  - {fileID: 8506917652163021685}
+  - {fileID: 6790205610328739939}
+  - {fileID: 1277940037410848226}
+  - {fileID: 862949301111939202}
+  - {fileID: 8112528076003195056}
+  - {fileID: 1373399828244326345}
+  - {fileID: 1623427126090081022}
+  - {fileID: 2871510519262719922}
+  - {fileID: 8787526305714824255}
+  - {fileID: 1853282893743371619}
+  - {fileID: 7492439931864290895}
+  - {fileID: 6810814693556897217}
+  Red_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Speed_Body:
+  - 1.7
+  - 1.6
+  - 1.5
+  - 1.4
+  - 1.3
+  - 1.2
+  - 1.1
+  - 1
+  - 0.9
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  - 0.4
+  - 0.3
+  - 0.2
+  - 0.1
+  Speed_Effect:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  - 1
+  - 1.1
+  - 1.2
+  - 1.3
+  - 1.4
+  - 1.5
+  - 1.6
+  - 1.7
+  Change_Body: 0000000000000000000000000000000000
+  Change_Effect: 0000000000000000000000000000000000
 --- !u!1 &1362106299191036299
 GameObject:
   m_ObjectHideFlags: 0
@@ -10490,6 +10834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7963796297446093238}
+  - component: {fileID: 1039707916}
   m_Layer: 0
   m_Name: SELECT
   m_TagString: Untagged
@@ -10517,6 +10862,148 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039707916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248665484386476110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b095da48c55e2144b4542a46fd9a0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 6
+  Blink_Body:
+  - {fileID: 8167469793735980390}
+  - {fileID: 1979165314135400451}
+  - {fileID: 6268250092481065204}
+  - {fileID: 3181732949551426843}
+  - {fileID: 3335697779471831611}
+  - {fileID: 6048264087602119615}
+  Blink_Contour:
+  - {fileID: 3416647391887481485}
+  - {fileID: 3869372950484663591}
+  - {fileID: 8651638313330260382}
+  - {fileID: 2803437658145057388}
+  - {fileID: 1078122301666637305}
+  - {fileID: 5845706813934838191}
+  Blink_Effect:
+  - {fileID: 6073987344818061421}
+  - {fileID: 9014598016387243782}
+  - {fileID: 8203012641205155911}
+  - {fileID: 2220644714153209485}
+  - {fileID: 813180159248372763}
+  - {fileID: 3853109487810310258}
+  Red_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Efect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Speed_Body:
+  - 1
+  - 0.9
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  Speed_Contour:
+  - 1
+  - 0.9
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  Speed_Effect:
+  - 1
+  - 0.9
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  Change_Body: 000000000000
+  Change_Contour: 000000000000
+  Change_Effect: 000000000000
 --- !u!1 &3303619213128738535
 GameObject:
   m_ObjectHideFlags: 0
@@ -14381,6 +14868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6988400814633524184}
+  - component: {fileID: 1663955085}
   m_Layer: 0
   m_Name: GAMECLEAR
   m_TagString: Untagged
@@ -14411,6 +14899,202 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1663955085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961213359960816488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b095da48c55e2144b4542a46fd9a0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 9
+  Blink_Body:
+  - {fileID: 4449545942676763602}
+  - {fileID: 2767175167920322747}
+  - {fileID: 8913012263631714914}
+  - {fileID: 4695422245021388894}
+  - {fileID: 754805750055419838}
+  - {fileID: 7039605487514308137}
+  - {fileID: 3243892718580723675}
+  - {fileID: 7561417804191969543}
+  - {fileID: 6877573675316565642}
+  Blink_Contour:
+  - {fileID: 2676217530352839437}
+  - {fileID: 6900736537971652494}
+  - {fileID: 2823205026873350034}
+  - {fileID: 277074742997748858}
+  - {fileID: 6747528178968086930}
+  - {fileID: 3709726234795655085}
+  - {fileID: 5326517009901001318}
+  - {fileID: 4583342688884503291}
+  - {fileID: 2209941407472040585}
+  Blink_Effect:
+  - {fileID: 4797122044141982442}
+  - {fileID: 8234925717994403246}
+  - {fileID: 7380594684329382421}
+  - {fileID: 2579753647688493302}
+  - {fileID: 5063684390235910731}
+  - {fileID: 456598548884901165}
+  - {fileID: 6871941307370953462}
+  - {fileID: 5303034688152830219}
+  - {fileID: 7729761718031563263}
+  Red_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Efect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Speed_Body:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  Speed_Contour:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  Speed_Effect:
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  Change_Body: 000000000000000000
+  Change_Contour: 000000000000000000
+  Change_Effect: 000000000000000000
 --- !u!1 &5983989489819484323
 GameObject:
   m_ObjectHideFlags: 0
@@ -14962,6 +15646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4168343255107328439}
+  - component: {fileID: 134042229}
   m_Layer: 0
   m_Name: RETRY
   m_TagString: Untagged
@@ -14988,6 +15673,133 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &134042229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6644110373753643882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b095da48c55e2144b4542a46fd9a0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 5
+  Blink_Body:
+  - {fileID: 3256404469238983536}
+  - {fileID: 1845621542162017960}
+  - {fileID: 2316318135322200915}
+  - {fileID: 9203489786680032320}
+  - {fileID: 520876611863386449}
+  Blink_Contour:
+  - {fileID: 5481000280811289723}
+  - {fileID: 6524454414306563722}
+  - {fileID: 1198794450635176542}
+  - {fileID: 4358608190234528727}
+  - {fileID: 4250746487813073083}
+  - {fileID: 0}
+  Blink_Effect:
+  - {fileID: 4513556635300686445}
+  - {fileID: 5993944223814572067}
+  - {fileID: 4581989871494597842}
+  - {fileID: 6823405529233367295}
+  - {fileID: 5814148233819379050}
+  - {fileID: 0}
+  Red_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Body:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Contour:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Red_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Green_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Blue_Efect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Alpha_Effect:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Speed_Body:
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  Speed_Contour:
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  Speed_Effect:
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  Change_Body: 0000000000
+  Change_Contour: 0000000000
+  Change_Effect: 0000000000
 --- !u!1 &6646256436478212434
 GameObject:
   m_ObjectHideFlags: 0

@@ -450,13 +450,13 @@ public class CountDow : MonoBehaviour
                 Count_3[0].SetActive(true);
                 Alpha_Third[0] += Alpha_Speed;
                 //3の母体α値100％
-                Count_3[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Third[0]);
+                Count_3[0].GetComponent<Image>().color = new Color(0.7f, 1.0f, 0.0f, Alpha_Third[0]);
             }
 
             //3の輪郭表示
             Count_3[1].SetActive(true);
             //3の輪郭α値100％
-            Count_3[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Third[1]);
+            Count_3[1].GetComponent<Image>().color = new Color(0.7f, 1.0f, 0.0f, Alpha_Third[1]);
 
             if (Time_Count <= 3.8f)
             {
@@ -464,7 +464,7 @@ public class CountDow : MonoBehaviour
                 Count_3[2].SetActive(true);
                 Alpha_Third[2] += Alpha_Speed;
                 //3のエフェクトα値100％
-                Count_3[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Third[2]);
+                Count_3[2].GetComponent<Image>().color = new Color(0.7f, 1.0f, 0.0f, Alpha_Third[2]);
             }
         }
         //3秒以下なら2の文字表示
@@ -494,13 +494,13 @@ public class CountDow : MonoBehaviour
                 Count_2[0].SetActive(true);
                 Alpha_Second[0] += Alpha_Speed;
                 //2の文字母体α値100％
-                Count_2[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Second[0]);
+                Count_2[0].GetComponent<Image>().color = new Color(0.0f, 0.7f, 1.0f, Alpha_Second[0]);
             }
 
             //2の文字輪郭表示
             Count_2[1].SetActive(true);
             //2の文字輪郭α値100％
-            Count_2[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Second[1]);
+            Count_2[1].GetComponent<Image>().color = new Color(0.0f, 0.7f, 1.0f, Alpha_Second[1]);
 
             if (Time_Count <= 2.8f)
             {
@@ -508,7 +508,7 @@ public class CountDow : MonoBehaviour
                 Count_2[2].SetActive(true);
                 Alpha_Second[2] += Alpha_Speed;
                 //2の文字エフェクトα値100％
-                Count_2[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Second[2]);
+                Count_2[2].GetComponent<Image>().color = new Color(0.0f, 0.7f, 1.0f, Alpha_Second[2]);
             }
         }
         //2秒以下なら1の文字表示
@@ -538,13 +538,13 @@ public class CountDow : MonoBehaviour
                 Count_1[0].SetActive(true);
                 Alpha_One[0] += Alpha_Speed;
                 //1の文字母体α値100％
-                Count_1[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_One[0]);
+                Count_1[0].GetComponent<Image>().color = new Color(1.0f, 0.7f, 0.0f, Alpha_One[0]);
             }
 
             //1の文字輪郭表示
             Count_1[1].SetActive(true);
             //1の文字輪郭α値100％
-            Count_1[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_One[1]);
+            Count_1[1].GetComponent<Image>().color = new Color(1.0f, 0.7f, 0.0f, Alpha_One[1]);
 
             if (Time_Count <= 1.8f)
             {
@@ -552,7 +552,7 @@ public class CountDow : MonoBehaviour
                 Count_1[2].SetActive(true);
                 Alpha_One[2] += Alpha_Speed;
                 //1の文字エフェクト表示α値100％
-                Count_1[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_One[2]);
+                Count_1[2].GetComponent<Image>().color = new Color(1.0f, 0.7f, 0.0f, Alpha_One[2]);
             }
         }
         //1秒以下ならGOの文字表示
@@ -579,23 +579,23 @@ public class CountDow : MonoBehaviour
                 Count_Zero1[0].SetActive(true);
                 Alpha_Zero[0] += Alpha_Speed;
                 //Gの文字母体α値100％
-                Count_Zero1[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Zero[0]);
+                Count_Zero1[0].GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, Alpha_Zero[0]);
 
                 //Oの文字母体表示
                 Count_Zero2[0].SetActive(true);
                 //Oの文字母体α値100％
-                Count_Zero2[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Zero[0]);
+                Count_Zero2[0].GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, Alpha_Zero[0]);
             }
 
             //Gの文字輪郭表示
             Count_Zero1[1].SetActive(true);
             //Gの文字輪郭α値100％
-            Count_Zero1[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Zero[1]);
+            Count_Zero1[1].GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, Alpha_Zero[1]);
 
             //Oの文字輪郭表示
             Count_Zero2[1].SetActive(true);
             //Oの文字輪郭α値100％
-            Count_Zero2[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Zero[1]);
+            Count_Zero2[1].GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, Alpha_Zero[1]);
 
             if (Time_Count <= 0.8f)
             {
@@ -603,12 +603,12 @@ public class CountDow : MonoBehaviour
                 Count_Zero1[2].SetActive(true);
                 Alpha_Zero[2] += Alpha_Speed;
                 //Gの文字エフェクトα値100％
-                Count_Zero1[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Zero[2]);
+                Count_Zero1[2].GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, Alpha_Zero[2]);
 
                 //Oの文字エフェクト表示
                 Count_Zero2[2].SetActive(true);
                 //Oの文字エフェクトα値100％
-                Count_Zero2[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha_Zero[2]);
+                Count_Zero2[2].GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, Alpha_Zero[2]);
             }
         }
         //0秒以下になったら全て非表示

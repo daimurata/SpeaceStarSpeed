@@ -42,7 +42,7 @@ public class Ranking : MonoBehaviour
     [SerializeField]
     Sprite[] numberSprites = new Sprite[11];
     //Newの文字を５個登録
-    public GameObject[] Newobject = new GameObject[5];
+    public  GameObject[] Newobject = new GameObject[5];
     // Start is called before the first frame update
     void Start()
     {
@@ -73,7 +73,7 @@ public class Ranking : MonoBehaviour
             point6 = 3600;
         }
         //ランキングを初期化
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         //ランキング呼び出し
         GetRanking();
         //ランキングを書き込む

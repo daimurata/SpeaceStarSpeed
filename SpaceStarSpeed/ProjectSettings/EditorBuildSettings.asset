@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/1_Nakashima/Scene/Stage1.unity
     guid: d6480fdf28dc9c24f828cd20243ac27a
   - enabled: 1
-    path: Assets/5_Sawada/Scene/New Scene.unity
+    path: Assets/5_Sawada/Scene/result.unity
     guid: fab6be919e278d74bbf0e11ce3c83182
   - enabled: 1
     path: Assets/5_Sawada/Scene/nextScene.unity

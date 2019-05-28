@@ -18,9 +18,6 @@ public class Scene2 : MonoBehaviour
     void Update()
     {
         ScoreText.text =scoa.ToString();
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("New Scene");
-        }
+      
     }
 }

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.23236784, g: 0.23553982, b: 0.27230316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 29583638}
   - component: {fileID: 29583637}
   - component: {fileID: 29583636}
+  - component: {fileID: 29583641}
   m_Layer: 5
   m_Name: YesNoStage2
   m_TagString: Untagged
@@ -249,6 +250,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &29583641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29583634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 898376125}
+  FadeButton1: {fileID: 2072392321}
+  FadeButton2: {fileID: 336469662}
+  SceneName: Stage2
 --- !u!1 &58940951
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +279,6 @@ GameObject:
   - component: {fileID: 58940954}
   - component: {fileID: 58940952}
   - component: {fileID: 58940955}
-  - component: {fileID: 58940953}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -310,7 +326,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58940953}
+      - m_Target: {fileID: 1730215366}
         m_MethodName: FadeOutButton
         m_Mode: 1
         m_Arguments:
@@ -323,22 +339,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &58940953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58940951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 277618017}
-  FadeButton1: {fileID: 0}
-  FadeButton2: {fileID: 0}
-  SceneName: Stage4
 --- !u!114 &58940954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 100672118}
   - component: {fileID: 100672117}
   - component: {fileID: 100672116}
+  - component: {fileID: 100672121}
   m_Layer: 5
   m_Name: YesNoStage5
   m_TagString: Untagged
@@ -545,6 +546,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &100672121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100672114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 853241446}
+  FadeButton1: {fileID: 1531103564}
+  FadeButton2: {fileID: 1528104155}
+  SceneName: Stage5
 --- !u!1 &117858212
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +576,7 @@ GameObject:
   - component: {fileID: 117858215}
   - component: {fileID: 117858214}
   - component: {fileID: 117858213}
+  - component: {fileID: 117858219}
   m_Layer: 5
   m_Name: YesNoStage1
   m_TagString: Untagged
@@ -682,6 +700,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &117858219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117858212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 1401639751}
+  FadeButton1: {fileID: 1605184874}
+  FadeButton2: {fileID: 1615678819}
+  SceneName: Stage1
 --- !u!1 &181169443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,6 +1498,7 @@ GameObject:
   - component: {fileID: 353551404}
   - component: {fileID: 353551403}
   - component: {fileID: 353551402}
+  - component: {fileID: 353551407}
   m_Layer: 5
   m_Name: YesNoStage3
   m_TagString: Untagged
@@ -1587,6 +1622,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &353551407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353551400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 2021405590}
+  FadeButton1: {fileID: 680546065}
+  FadeButton2: {fileID: 877001032}
+  SceneName: Stage3
 --- !u!1 &359914940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,7 +2086,6 @@ GameObject:
   - component: {fileID: 613286004}
   - component: {fileID: 613286002}
   - component: {fileID: 613286005}
-  - component: {fileID: 613286003}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -2083,7 +2133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 613286003}
+      - m_Target: {fileID: 1093384940}
         m_MethodName: FadeOutButton
         m_Mode: 1
         m_Arguments:
@@ -2096,22 +2146,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &613286003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613286001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 1990137130}
-  FadeButton1: {fileID: 0}
-  FadeButton2: {fileID: 0}
-  SceneName: Stage6
 --- !u!114 &613286004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,7 +2651,6 @@ GameObject:
   - component: {fileID: 680546068}
   - component: {fileID: 680546066}
   - component: {fileID: 680546069}
-  - component: {fileID: 680546067}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -2665,7 +2698,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680546067}
+      - m_Target: {fileID: 353551407}
         m_MethodName: FadeOutButton
         m_Mode: 1
         m_Arguments:
@@ -2678,22 +2711,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &680546067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680546065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 2021405590}
-  FadeButton1: {fileID: 0}
-  FadeButton2: {fileID: 0}
-  SceneName: Stage3
 --- !u!114 &680546068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3764,6 +3781,7 @@ GameObject:
   - component: {fileID: 1093384937}
   - component: {fileID: 1093384936}
   - component: {fileID: 1093384935}
+  - component: {fileID: 1093384940}
   m_Layer: 5
   m_Name: YesNoStage6
   m_TagString: Untagged
@@ -3887,6 +3905,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1093384940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093384933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 1990137130}
+  FadeButton1: {fileID: 613286001}
+  FadeButton2: {fileID: 223320095}
+  SceneName: Stage6
 --- !u!1 &1149841130
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,7 +4623,6 @@ GameObject:
   - component: {fileID: 1531103567}
   - component: {fileID: 1531103565}
   - component: {fileID: 1531103568}
-  - component: {fileID: 1531103566}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -4637,7 +4670,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1531103566}
+      - m_Target: {fileID: 100672121}
         m_MethodName: FadeOutButton
         m_Mode: 1
         m_Arguments:
@@ -4650,22 +4683,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1531103566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531103564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 853241446}
-  FadeButton1: {fileID: 0}
-  FadeButton2: {fileID: 0}
-  SceneName: Stage5
 --- !u!114 &1531103567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4746,6 +4763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: orange_planet
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 33509c98a08c1e7479fa14adb4923d4c, type: 2}
     - target: {fileID: 400000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4802,10 +4823,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 33509c98a08c1e7479fa14adb4923d4c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32ee3a4a0ba913649947d26fd6a83cb0, type: 3}
 --- !u!1 &1589549160
@@ -4817,12 +4834,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1589549161}
-  - component: {fileID: 1589549162}
-  - component: {fileID: 1589549167}
-  - component: {fileID: 1589549166}
-  - component: {fileID: 1589549165}
-  - component: {fileID: 1589549164}
-  - component: {fileID: 1589549163}
   m_Layer: 0
   m_Name: YesNoCanvasSet
   m_TagString: Untagged
@@ -4850,102 +4861,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1589549162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589549160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 1401639751}
-  FadeButton1: {fileID: 1605184874}
-  FadeButton2: {fileID: 1615678819}
-  SceneName: Stage1
---- !u!114 &1589549163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589549160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 1990137130}
-  FadeButton1: {fileID: 613286001}
-  FadeButton2: {fileID: 223320095}
-  SceneName: Stage6
---- !u!114 &1589549164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589549160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 853241446}
-  FadeButton1: {fileID: 1531103564}
-  FadeButton2: {fileID: 1528104155}
-  SceneName: Stage5
---- !u!114 &1589549165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589549160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 277618017}
-  FadeButton1: {fileID: 58940951}
-  FadeButton2: {fileID: 303756935}
-  SceneName: Stage4
---- !u!114 &1589549166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589549160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 2021405590}
-  FadeButton1: {fileID: 680546065}
-  FadeButton2: {fileID: 877001032}
-  SceneName: Stage3
---- !u!114 &1589549167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589549160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 898376125}
-  FadeButton1: {fileID: 2072392321}
-  FadeButton2: {fileID: 336469662}
-  SceneName: Stage2
 --- !u!1 &1605184874
 GameObject:
   m_ObjectHideFlags: 0
@@ -5018,7 +4933,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1589549162}
+      - m_Target: {fileID: 117858219}
         m_MethodName: FadeOutButton
         m_Mode: 1
         m_Arguments:
@@ -5304,6 +5219,7 @@ GameObject:
   - component: {fileID: 1730215363}
   - component: {fileID: 1730215362}
   - component: {fileID: 1730215361}
+  - component: {fileID: 1730215366}
   m_Layer: 5
   m_Name: YesNoStage4
   m_TagString: Untagged
@@ -5427,6 +5343,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1730215366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730215359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 277618017}
+  FadeButton1: {fileID: 58940951}
+  FadeButton2: {fileID: 303756935}
+  SceneName: Stage4
 --- !u!1001 &1829508423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6330,7 +6262,6 @@ GameObject:
   - component: {fileID: 2072392324}
   - component: {fileID: 2072392322}
   - component: {fileID: 2072392325}
-  - component: {fileID: 2072392323}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -6378,7 +6309,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2072392323}
+      - m_Target: {fileID: 29583641}
         m_MethodName: FadeOutButton
         m_Mode: 1
         m_Arguments:
@@ -6391,22 +6322,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &2072392323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072392321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e5156829bffd64e8e3cfbcc81f07b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeImage: {fileID: 898376125}
-  FadeButton1: {fileID: 0}
-  FadeButton2: {fileID: 0}
-  SceneName: Stage2
 --- !u!114 &2072392324
 MonoBehaviour:
   m_ObjectHideFlags: 0

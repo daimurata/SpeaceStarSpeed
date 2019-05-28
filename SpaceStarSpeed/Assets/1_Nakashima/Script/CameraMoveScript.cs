@@ -10,17 +10,19 @@ public class CameraMoveScript : MonoBehaviour
     [SerializeField] private GameObject MainCamera;
     //サブカメラ、ステージを見渡す際に使用するカメラ
     [SerializeField] private GameObject SubCamera;
+    //プレイヤーをアタッチ、これをしないと勝手にプレイヤーが動く
+    public GameObject MainPlayer;
 
     //移動場所、今は仮なので変更していきます
     public Vector3 target = new Vector3(0, 505, 0);
     //速度
-    private float speed = 50.0f;
+    private float speed = 300.0f;
     //カメラの変更がループしないために用意
     bool CameraChangeBool = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+     
     }
 
     // Update is called once per frame
@@ -31,7 +33,10 @@ public class CameraMoveScript : MonoBehaviour
 
     void CameraMove()
     {
-        if(CameraChangeBool == true)
+        //重力を一時的に切る
+        var PlayerGravity = MainPlayer.GetComponent<Rigidbody>();
+
+        if (CameraChangeBool == true)
         {  
             float step = speed * Time.deltaTime;
             //targetに向かってSubCameraが移動する
@@ -44,6 +49,11 @@ public class CameraMoveScript : MonoBehaviour
                 ChangeCamera();
                 //ここで終了させる
                 CameraChangeBool = false;
+
+                //プレイヤーの重力をtrueにする
+                PlayerGravity.useGravity = true;
+                //PlayerMoveのスクリプトをtrueにする
+                MainPlayer.GetComponent<PlayerMove>().enabled = true;
             }
         }
         

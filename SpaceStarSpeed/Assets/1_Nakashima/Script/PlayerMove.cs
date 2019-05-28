@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     //ここでは主にプレイヤー周りに関することを追加していく予定（Moveってあるけど移動だけじゃないよ）
 
     //プレイヤー
-    public GameObject player;   //オブジェクト
+    //public GameObject player;   //オブジェクト
     private Vector3 player_pos;
     
     float alpha_Sin;    //色
@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         //自キャラのオブジェクト取得
-        player = GetComponent<GameObject>();
+        //player = GetComponent<GameObject>();
 
         
 

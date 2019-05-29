@@ -43,7 +43,12 @@ public class Ranking : MonoBehaviour
     Sprite[] numberSprites = new Sprite[11];
     //Newの文字を５個登録
     public  GameObject[] Newobject = new GameObject[5];
+    //点滅するスピード
+    public float speed = 0.5f;
+    //点滅が終わるまでの時間
+    private float time;
     // Start is called before the first frame update
+
     void Start()
     {
         
@@ -73,7 +78,7 @@ public class Ranking : MonoBehaviour
             point6 = 3600;
         }
         //ランキングを初期化
-        PlayerPrefs.DeleteAll();
+       PlayerPrefs.DeleteAll();
         //ランキング呼び出し
         GetRanking();
         //ランキングを書き込む
@@ -88,6 +93,7 @@ public class Ranking : MonoBehaviour
                 //ランキングの順位に合わせてnewの文字を表示する
                 if (rankingValue[0]==point)
                 {
+                
                     Newobject[0].SetActive(true);
                     Newobject[1].SetActive(false);
                     Newobject[2].SetActive(false);
@@ -676,8 +682,267 @@ public class Ranking : MonoBehaviour
         }
      
 }
-    //スプライトを表示
-    void SetNumbers(int sec, int val1,int val2)
+    void Update()
+    {
+        //点滅処理
+        if (SceneManager.GetActiveScene().name == "result")
+        {
+            if (rankingValue[0] == point)
+            {
+                images[0].color = GetAlphaColor(images[0].color);
+                images[1].color = GetAlphaColor(images[1].color);
+                images[2].color = GetAlphaColor(images[2].color);
+                images[3].color = GetAlphaColor(images[3].color);
+            }
+            else
+            if (rankingValue[1] == point)
+            {
+                images[4].color = GetAlphaColor(images[4].color);
+                images[5].color = GetAlphaColor(images[5].color);
+                images[6].color = GetAlphaColor(images[6].color);
+                images[7].color = GetAlphaColor(images[7].color);
+            }
+            else
+            if (rankingValue[2] == point)
+            {
+                images[8].color = GetAlphaColor(images[8].color);
+                images[9].color = GetAlphaColor(images[9].color);
+                images[10].color = GetAlphaColor(images[10].color);
+                images[11].color = GetAlphaColor(images[11].color);
+            }
+            else
+             if (rankingValue[3] == point)
+            {
+                images[12].color = GetAlphaColor(images[12].color);
+                images[13].color = GetAlphaColor(images[13].color);
+                images[14].color = GetAlphaColor(images[14].color);
+                images[15].color = GetAlphaColor(images[15].color);
+            }
+            else
+             if (rankingValue[4] == point)
+            {
+                images[16].color = GetAlphaColor(images[16].color);
+                images[17].color = GetAlphaColor(images[17].color);
+                images[18].color = GetAlphaColor(images[18].color);
+                images[19].color = GetAlphaColor(images[19].color);
+            }
+        }
+       
+            if (SceneManager.GetActiveScene().name == "result 2")
+            {
+                if (rankingValue2[0] == point2)
+                {
+                    images[0].color = GetAlphaColor(images[0].color);
+                    images[1].color = GetAlphaColor(images[1].color);
+                    images[2].color = GetAlphaColor(images[2].color);
+                    images[3].color = GetAlphaColor(images[3].color);
+                }
+                else
+                if (rankingValue2[1] == point2)
+                {
+                    images[4].color = GetAlphaColor(images[4].color);
+                    images[5].color = GetAlphaColor(images[5].color);
+                    images[6].color = GetAlphaColor(images[6].color);
+                    images[7].color = GetAlphaColor(images[7].color);
+                }
+                else
+                if (rankingValue2[2] == point2)
+                {
+                    images[8].color = GetAlphaColor(images[8].color);
+                    images[9].color = GetAlphaColor(images[9].color);
+                    images[10].color = GetAlphaColor(images[10].color);
+                    images[11].color = GetAlphaColor(images[11].color);
+                }
+                else
+                 if (rankingValue2[3] == point2)
+                {
+                    images[12].color = GetAlphaColor(images[12].color);
+                    images[13].color = GetAlphaColor(images[13].color);
+                    images[14].color = GetAlphaColor(images[14].color);
+                    images[15].color = GetAlphaColor(images[15].color);
+                }
+                else
+                 if (rankingValue2[4] == point2)
+                {
+                    images[16].color = GetAlphaColor(images[16].color);
+                    images[17].color = GetAlphaColor(images[17].color);
+                    images[18].color = GetAlphaColor(images[18].color);
+                    images[19].color = GetAlphaColor(images[19].color);
+                }
+            }
+            if (SceneManager.GetActiveScene().name == "result 3")
+            {
+                if (rankingValue3[0] == point3)
+                {
+                    images[0].color = GetAlphaColor(images[0].color);
+                    images[1].color = GetAlphaColor(images[1].color);
+                    images[2].color = GetAlphaColor(images[2].color);
+                    images[3].color = GetAlphaColor(images[3].color);
+                }
+                else
+                if (rankingValue3[1] == point3)
+                {
+                    images[4].color = GetAlphaColor(images[4].color);
+                    images[5].color = GetAlphaColor(images[5].color);
+                    images[6].color = GetAlphaColor(images[6].color);
+                    images[7].color = GetAlphaColor(images[7].color);
+                }
+                else
+                if (rankingValue3[2] == point3)
+                {
+                    images[8].color = GetAlphaColor(images[8].color);
+                    images[9].color = GetAlphaColor(images[9].color);
+                    images[10].color = GetAlphaColor(images[10].color);
+                    images[11].color = GetAlphaColor(images[11].color);
+                }
+                else
+                 if (rankingValue3[3] == point3)
+                {
+                    images[12].color = GetAlphaColor(images[12].color);
+                    images[13].color = GetAlphaColor(images[13].color);
+                    images[14].color = GetAlphaColor(images[14].color);
+                    images[15].color = GetAlphaColor(images[15].color);
+                }
+                else
+                 if (rankingValue3[4] == point3)
+                {
+                    images[16].color = GetAlphaColor(images[16].color);
+                    images[17].color = GetAlphaColor(images[17].color);
+                    images[18].color = GetAlphaColor(images[18].color);
+                    images[19].color = GetAlphaColor(images[19].color);
+                }
+            }
+            if (SceneManager.GetActiveScene().name == "result 4")
+            {
+                if (rankingValue4[0] == point4)
+                {
+                    images[0].color = GetAlphaColor(images[0].color);
+                    images[1].color = GetAlphaColor(images[1].color);
+                    images[2].color = GetAlphaColor(images[2].color);
+                    images[3].color = GetAlphaColor(images[3].color);
+                }
+                else
+                if (rankingValue4[1] == point4)
+                {
+                    images[4].color = GetAlphaColor(images[4].color);
+                    images[5].color = GetAlphaColor(images[5].color);
+                    images[6].color = GetAlphaColor(images[6].color);
+                    images[7].color = GetAlphaColor(images[7].color);
+                }
+                else
+                if (rankingValue4[2] == point4)
+                {
+                    images[8].color = GetAlphaColor(images[8].color);
+                    images[9].color = GetAlphaColor(images[9].color);
+                    images[10].color = GetAlphaColor(images[10].color);
+                    images[11].color = GetAlphaColor(images[11].color);
+                }
+                else
+                 if (rankingValue4[3] == point4)
+                {
+                    images[12].color = GetAlphaColor(images[12].color);
+                    images[13].color = GetAlphaColor(images[13].color);
+                    images[14].color = GetAlphaColor(images[14].color);
+                    images[15].color = GetAlphaColor(images[15].color);
+                }
+                else
+                 if (rankingValue4[4] == point4)
+                {
+                    images[16].color = GetAlphaColor(images[16].color);
+                    images[17].color = GetAlphaColor(images[17].color);
+                    images[18].color = GetAlphaColor(images[18].color);
+                    images[19].color = GetAlphaColor(images[19].color);
+                }
+            }
+            if (SceneManager.GetActiveScene().name == "result 5")
+            {
+                if (rankingValue5[0] == point5)
+                {
+                    images[0].color = GetAlphaColor(images[0].color);
+                    images[1].color = GetAlphaColor(images[1].color);
+                    images[2].color = GetAlphaColor(images[2].color);
+                    images[3].color = GetAlphaColor(images[3].color);
+                }
+                else
+                if (rankingValue5[1] == point5)
+                {
+                    images[4].color = GetAlphaColor(images[4].color);
+                    images[5].color = GetAlphaColor(images[5].color);
+                    images[6].color = GetAlphaColor(images[6].color);
+                    images[7].color = GetAlphaColor(images[7].color);
+                }
+                else
+                if (rankingValue5[2] == point5)
+                {
+                    images[8].color = GetAlphaColor(images[8].color);
+                    images[9].color = GetAlphaColor(images[9].color);
+                    images[10].color = GetAlphaColor(images[10].color);
+                    images[11].color = GetAlphaColor(images[11].color);
+                }
+                else
+                 if (rankingValue5[3] == point5)
+                {
+                    images[12].color = GetAlphaColor(images[12].color);
+                    images[13].color = GetAlphaColor(images[13].color);
+                    images[14].color = GetAlphaColor(images[14].color);
+                    images[15].color = GetAlphaColor(images[15].color);
+                }
+                else
+                 if (rankingValue5[4] == point5)
+                {
+                    images[16].color = GetAlphaColor(images[16].color);
+                    images[17].color = GetAlphaColor(images[17].color);
+                    images[18].color = GetAlphaColor(images[18].color);
+                    images[19].color = GetAlphaColor(images[19].color);
+                }
+            }
+            if (SceneManager.GetActiveScene().name == "result 6")
+            {
+                if (rankingValue6[0] == point6)
+                {
+                    images[0].color = GetAlphaColor(images[0].color);
+                    images[1].color = GetAlphaColor(images[1].color);
+                    images[2].color = GetAlphaColor(images[2].color);
+                    images[3].color = GetAlphaColor(images[3].color);
+                }
+                else
+                if (rankingValue6[1] == point6)
+                {
+                    images[4].color = GetAlphaColor(images[4].color);
+                    images[5].color = GetAlphaColor(images[5].color);
+                    images[6].color = GetAlphaColor(images[6].color);
+                    images[7].color = GetAlphaColor(images[7].color);
+                }
+                else
+                if (rankingValue6[2] == point6)
+                {
+                    images[8].color = GetAlphaColor(images[8].color);
+                    images[9].color = GetAlphaColor(images[9].color);
+                    images[10].color = GetAlphaColor(images[10].color);
+                    images[11].color = GetAlphaColor(images[11].color);
+                }
+                else
+                 if (rankingValue6[3] == point6)
+                {
+                    images[12].color = GetAlphaColor(images[12].color);
+                    images[13].color = GetAlphaColor(images[13].color);
+                    images[14].color = GetAlphaColor(images[14].color);
+                    images[15].color = GetAlphaColor(images[15].color);
+                }
+                else
+                 if (rankingValue6[4] == point6)
+                {
+                    images[16].color = GetAlphaColor(images[16].color);
+                    images[17].color = GetAlphaColor(images[17].color);
+                    images[18].color = GetAlphaColor(images[18].color);
+                    images[19].color = GetAlphaColor(images[19].color);
+                }
+            }
+        
+        }
+
+            //スプライトを表示
+            void SetNumbers(int sec, int val1,int val2)
     {
         string str = String.Format("{0:00}", sec);
         images[val1].sprite = numberSprites[Convert.ToInt32(str.Substring(0, 1))];
@@ -961,7 +1226,14 @@ public class Ranking : MonoBehaviour
 
         }
     }
+    //Alpha値を更新してColorを返す
+    Color GetAlphaColor(Color color)
+    {
+        time += Time.deltaTime * 5.0f * speed;
+        color.a = Mathf.Sin(time) * 0.5f + 0.5f;
 
+        return color;
+    }
     // Update is called once per frame
-  
+
 }

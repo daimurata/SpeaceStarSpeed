@@ -1514,6 +1514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802661208}
+  - component: {fileID: 1657121984}
   m_Layer: 0
   m_Name: New (2)
   m_TagString: Untagged
@@ -1538,6 +1539,41 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657121984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802661207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1118ca47ad7d5e4194bb0a754fd5e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Body:
+  - {fileID: 320218902}
+  - {fileID: 78857098}
+  - {fileID: 1808874581}
+  Text_Contour:
+  - {fileID: 13648177}
+  - {fileID: 1797460898}
+  - {fileID: 619833731}
+  Text_Effect:
+  - {fileID: 518959570}
+  - {fileID: 1926357956}
+  - {fileID: 1524049419}
+  Change: 0000
+  Blink: 000000
+  Alpha:
+  - 0.01
+  - 0.01
+  - 0.01
+  Alpha_Speed:
+  - 0.01
+  - 0.02
+  - 0.03
+  Time_Count: 0
 --- !u!1 &843533782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,6 +2529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187544774}
+  - component: {fileID: 1657121983}
   m_Layer: 0
   m_Name: New (3)
   m_TagString: Untagged
@@ -2517,6 +2554,41 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657121983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187544773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1118ca47ad7d5e4194bb0a754fd5e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Body:
+  - {fileID: 703717760}
+  - {fileID: 865671571}
+  - {fileID: 1214169979}
+  Text_Contour:
+  - {fileID: 618481471}
+  - {fileID: 1471914440}
+  - {fileID: 1887715598}
+  Text_Effect:
+  - {fileID: 1425927121}
+  - {fileID: 1884000792}
+  - {fileID: 56340162}
+  Change: 0000
+  Blink: 000000
+  Alpha:
+  - 0.01
+  - 0.01
+  - 0.01
+  Alpha_Speed:
+  - 0.01
+  - 0.02
+  - 0.03
+  Time_Count: 0
 --- !u!1 &1201147994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623045069}
+  - component: {fileID: 1657121982}
   m_Layer: 0
   m_Name: New (4)
   m_TagString: Untagged
@@ -3430,6 +3503,41 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657121982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623045068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1118ca47ad7d5e4194bb0a754fd5e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Body:
+  - {fileID: 1915390152}
+  - {fileID: 1582561946}
+  - {fileID: 1845058909}
+  Text_Contour:
+  - {fileID: 102150137}
+  - {fileID: 1556767772}
+  - {fileID: 323649495}
+  Text_Effect:
+  - {fileID: 579657700}
+  - {fileID: 1062719184}
+  - {fileID: 1106402513}
+  Change: 0000
+  Blink: 000000
+  Alpha:
+  - 0.01
+  - 0.01
+  - 0.01
+  Alpha_Speed:
+  - 0.01
+  - 0.02
+  - 0.03
+  Time_Count: 0
 --- !u!1 &1647013607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1774212156}
+  - component: {fileID: 1657121985}
   m_Layer: 0
   m_Name: New (1)
   m_TagString: Untagged
@@ -3592,6 +3701,41 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657121985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774212155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1118ca47ad7d5e4194bb0a754fd5e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Body:
+  - {fileID: 1022736565}
+  - {fileID: 1020777749}
+  - {fileID: 1012043516}
+  Text_Contour:
+  - {fileID: 1453121125}
+  - {fileID: 2123647108}
+  - {fileID: 843533782}
+  Text_Effect:
+  - {fileID: 1875001960}
+  - {fileID: 2018172491}
+  - {fileID: 1976431166}
+  Change: 0000
+  Blink: 000000
+  Alpha:
+  - 0.01
+  - 0.01
+  - 0.01
+  Alpha_Speed:
+  - 0.01
+  - 0.02
+  - 0.03
+  Time_Count: 0
 --- !u!1 &1797460898
 GameObject:
   m_ObjectHideFlags: 0
@@ -8234,6 +8378,7 @@ MonoBehaviour:
   - {fileID: 802661207}
   - {fileID: 1187544773}
   - {fileID: 1623045068}
+  speed: 0.5
 --- !u!1 &1496763002405263698
 GameObject:
   m_ObjectHideFlags: 0
@@ -10366,6 +10511,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1369756504107983929}
+  - component: {fileID: 1657121986}
   m_Layer: 0
   m_Name: New
   m_TagString: Untagged
@@ -10390,6 +10536,41 @@ Transform:
   m_Father: {fileID: 1054105425463978266}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657121986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928785139025719236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1118ca47ad7d5e4194bb0a754fd5e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Body:
+  - {fileID: 2007510589381781918}
+  - {fileID: 7550340397354767226}
+  - {fileID: 5863737074898306025}
+  Text_Contour:
+  - {fileID: 4638539914434429219}
+  - {fileID: 5431438147014801942}
+  - {fileID: 7642936769064104561}
+  Text_Effect:
+  - {fileID: 7318482595595049543}
+  - {fileID: 1073835267793505680}
+  - {fileID: 3480105394167758951}
+  Change: 0000
+  Blink: 000000
+  Alpha:
+  - 0.01
+  - 0.01
+  - 0.01
+  Alpha_Speed:
+  - 0.1
+  - 0.2
+  - 0.3
+  Time_Count: 0
 --- !u!1 &2961978181255845907
 GameObject:
   m_ObjectHideFlags: 0

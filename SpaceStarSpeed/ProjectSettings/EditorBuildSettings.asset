@@ -14,21 +14,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1_Nakashima/Scene/Stage1.unity
     guid: d6480fdf28dc9c24f828cd20243ac27a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/1_Nakashima/Scene/Stage2.unity
-    guid: 3bf6de74cd7933c41971abce3019207d
+    path: Assets/5_Sawada/Scene/nextScene.unity
+    guid: 2be9f0ae785ea44418db5bf7e1b2ea86
   - enabled: 1
-    path: Assets/1_Nakashima/Scene/Stage3.unity
-    guid: aacd96c82af7a1d4c8bd000a1bbc87c2
+    path: Assets/0_Master/Scene/MAIN.unity
+    guid: 76345901e847b33458465f20fa56cd0c
   - enabled: 1
-    path: Assets/1_Nakashima/Scene/Stage4.unity
-    guid: 34591b5d381d2e042a281d30bd2aa91e
+    path: Assets/0_Master/Scene/MAIN 2.unity
+    guid: 0787b2ea8595a8845ac0129417b4c749
   - enabled: 1
-    path: Assets/1_Nakashima/Scene/Stage5.unity
-    guid: af719e8fed13ead4f8ed9435bb41c5a5
+    path: Assets/0_Master/Scene/MAIN 3.unity
+    guid: 396716304259edf4ba7041b4ce65020c
   - enabled: 1
-    path: Assets/1_Nakashima/Scene/Stage6.unity
-    guid: d8156b7ac44b11e46b14f5208048bd83
+    path: Assets/0_Master/Scene/MAIN 4.unity
+    guid: 234cfbde603c942459136da174d43d0f
+  - enabled: 1
+    path: Assets/0_Master/Scene/MAIN 5.unity
+    guid: f6b2eff7eec197b43a22afacd8d1d375
+  - enabled: 1
+    path: Assets/0_Master/Scene/MAIN 6.unity
+    guid: 25f765c4cfdfc414196b4620b60189a8
   - enabled: 1
     path: Assets/0_Master/Scene/result.unity
     guid: 47e768e0bfe908540aa6aa83386ac88d
@@ -47,7 +56,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0_Master/Scene/result 6.unity
     guid: 969ac5419447e1244a8e88965a5fd529
-  - enabled: 1
-    path: Assets/5_Sawada/Scene/nextScene.unity
-    guid: 2be9f0ae785ea44418db5bf7e1b2ea86
   m_configObjects: {}

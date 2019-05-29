@@ -14,6 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1_Nakashima/Scene/Stage1.unity
     guid: d6480fdf28dc9c24f828cd20243ac27a
+<<<<<<< .merge_file_a09748
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -56,4 +57,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0_Master/Scene/result 6.unity
     guid: 969ac5419447e1244a8e88965a5fd529
+=======
+  - enabled: 1
+    path: Assets/5_Sawada/Scene/New Scene.unity
+    guid: fab6be919e278d74bbf0e11ce3c83182
+  - enabled: 1
+    path: Assets/5_Sawada/Scene/nextScene.unity
+    guid: 2be9f0ae785ea44418db5bf7e1b2ea86
+>>>>>>> .merge_file_a01228
   m_configObjects: {}

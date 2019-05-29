@@ -24,6 +24,7 @@ public class Result_Canvas : MonoBehaviour
     //切替
     public bool[] Change_Body, Change_Effect;
 
+    private float Color_MAX = 255f;
     //赤【本体】
     void Red_Color_Body()
     {
@@ -71,9 +72,9 @@ public class Result_Canvas : MonoBehaviour
     //RGBA【本体】セット
     void Color_Body()
     {
-        Red_Color_Body();//赤
-        Green_Color_Body();//緑
-        Blue_Color_Body();//青
+        //Red_Color_Body();//赤
+        //Green_Color_Body();//緑
+        //Blue_Color_Body();//青
         Alpha_Color_Body();//α値
     }
 
@@ -120,9 +121,9 @@ public class Result_Canvas : MonoBehaviour
     //赤緑青α値【エフェクト】
     void Color_Effect()
     {
-        Red_Color_Effect();//赤
-        Green_Color_Effect();//緑
-        Blue_Color_Effect();//青
+        //Red_Color_Effect();//赤
+        //Green_Color_Effect();//緑
+        //Blue_Color_Effect();//青
         Alpha_Color_Effect();//α値
     }
 
@@ -133,7 +134,7 @@ public class Result_Canvas : MonoBehaviour
         for (int i=0;i<Number;++i)
         {
             //画像色
-            Blink_Body[i].color = new Color(Red_Body[i], Green_Body[i], Blue_Body[i], Alpha_Body[i]);
+            Blink_Body[i].color = new Color(Red_Body[i] / Color_MAX, Green_Body[i] / Color_MAX, Blue_Body[i] / Color_MAX, Alpha_Body[i]);
         }
         //繰り返し
         return;
@@ -145,7 +146,7 @@ public class Result_Canvas : MonoBehaviour
         for (int i = 0; i < Number; ++i)
         {
             //画像色
-            Blink_Effect[i].color = new Color(Red_Effect[i], Green_Effect[i], Blue_Effect[i], Alpha_Effect[i]);
+            Blink_Effect[i].color = new Color(Red_Effect[i] / Color_MAX, Green_Effect[i] / Color_MAX, Blue_Effect[i] / Color_MAX, Alpha_Effect[i]);
         }
         //繰り返し
         return;

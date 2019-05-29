@@ -33,6 +33,8 @@ public class Select_Canvas : MonoBehaviour
     //切替
     public bool[] Change_Body = new bool[6], Change_Contour = new bool[6], Change_Effect = new bool[6];
 
+    private float Color_MAX = 255f;
+
     /// <summary>
     /// 母体の初期値
     /// </summary>
@@ -80,11 +82,11 @@ public class Select_Canvas : MonoBehaviour
     void Color_Body()
     {
         //赤の初期値
-        Red_Color_Body();
+        //Red_Color_Body();
         //緑の初期値
-        Green_Color_Body();
+        //Green_Color_Body();
         //青の初期値
-        Blue_Color_Body();
+        //Blue_Color_Body();
         //α値の初期値
         Alpha_Color_Body();
     }
@@ -136,11 +138,11 @@ public class Select_Canvas : MonoBehaviour
     void Color_Contour()
     {
         //赤の初期値
-        Red_Color_Contour();
+        //Red_Color_Contour();
         //緑の初期値
-        Green_Color_Contour();
+        //Green_Color_Contour();
         //青の初期値
-        Blue_Color_Contour();
+        //Blue_Color_Contour();
         //α値の初期値
         Alpha_Color_Contour();
     }
@@ -192,11 +194,11 @@ public class Select_Canvas : MonoBehaviour
     void Color_Effect()
     {
         //赤の初期値
-        Red_Color_Effect();
+        //Red_Color_Effect();
         //緑の初期値
-        Green_Color_Effect();
+        //Green_Color_Effect();
         //青の初期値
-        Blue_Color_Effect();
+        //Blue_Color_Effect();
         //α値の初期値
         Alpha_Color_Effect();
     }
@@ -207,32 +209,32 @@ public class Select_Canvas : MonoBehaviour
     //本体に反映
     void Body_Stage()
     {
-        Stage_Body[0].color = new Color(Red_Body[0], Green_Body[0], Blue_Body[0], Alpha_Body[0]);//数字
-        Stage_Body[1].color = new Color(Red_Body[1], Green_Body[1], Blue_Body[1], Alpha_Body[1]);//s
-        Stage_Body[2].color = new Color(Red_Body[2], Green_Body[2], Blue_Body[2], Alpha_Body[2]);//t
-        Stage_Body[3].color = new Color(Red_Body[3], Green_Body[3], Blue_Body[3], Alpha_Body[3]);//a
-        Stage_Body[4].color = new Color(Red_Body[4], Green_Body[4], Blue_Body[4], Alpha_Body[4]);//g
-        Stage_Body[5].color = new Color(Red_Body[5], Green_Body[5], Blue_Body[5], Alpha_Body[5]);//e
+        Stage_Body[0].color = new Color(Red_Body[0] / Color_MAX, Green_Body[0] / Color_MAX, Blue_Body[0] / Color_MAX, Alpha_Body[0]);//数字
+        Stage_Body[1].color = new Color(Red_Body[1] / Color_MAX, Green_Body[1] / Color_MAX, Blue_Body[1] / Color_MAX, Alpha_Body[1]);//s
+        Stage_Body[2].color = new Color(Red_Body[2] / Color_MAX, Green_Body[2] / Color_MAX, Blue_Body[2] / Color_MAX, Alpha_Body[2]);//t
+        Stage_Body[3].color = new Color(Red_Body[3] / Color_MAX, Green_Body[3] / Color_MAX, Blue_Body[3] / Color_MAX, Alpha_Body[3]);//a
+        Stage_Body[4].color = new Color(Red_Body[4] / Color_MAX, Green_Body[4] / Color_MAX, Blue_Body[4] / Color_MAX, Alpha_Body[4]);//g
+        Stage_Body[5].color = new Color(Red_Body[5] / Color_MAX, Green_Body[5] / Color_MAX, Blue_Body[5] / Color_MAX, Alpha_Body[5]);//e
     }
     //輪郭に反映
     void Contour_Stage()
     {
-        Stage_Contour[0].color = new Color(Red_Contour[0], Green_Contour[0], Blue_Contour[0], Alpha_Contour[0]);//数字
-        Stage_Contour[1].color = new Color(Red_Contour[1], Green_Contour[1], Blue_Contour[1], Alpha_Contour[1]);//s
-        Stage_Contour[2].color = new Color(Red_Contour[2], Green_Contour[2], Blue_Contour[2], Alpha_Contour[2]);//t
-        Stage_Contour[3].color = new Color(Red_Contour[3], Green_Contour[3], Blue_Contour[3], Alpha_Contour[3]);//a
-        Stage_Contour[4].color = new Color(Red_Contour[4], Green_Contour[4], Blue_Contour[4], Alpha_Contour[4]);//g
-        Stage_Contour[5].color = new Color(Red_Contour[5], Green_Contour[5], Blue_Contour[5], Alpha_Contour[5]);//e
+        Stage_Contour[0].color = new Color(Red_Contour[0] / Color_MAX, Green_Contour[0] / Color_MAX, Blue_Contour[0] / Color_MAX, Alpha_Contour[0]);//数字
+        Stage_Contour[1].color = new Color(Red_Contour[1] / Color_MAX, Green_Contour[1] / Color_MAX, Blue_Contour[1] / Color_MAX, Alpha_Contour[1]);//s
+        Stage_Contour[2].color = new Color(Red_Contour[2] / Color_MAX, Green_Contour[2] / Color_MAX, Blue_Contour[2] / Color_MAX, Alpha_Contour[2]);//t
+        Stage_Contour[3].color = new Color(Red_Contour[3] / Color_MAX, Green_Contour[3] / Color_MAX, Blue_Contour[3] / Color_MAX, Alpha_Contour[3]);//a
+        Stage_Contour[4].color = new Color(Red_Contour[4] / Color_MAX, Green_Contour[4] / Color_MAX, Blue_Contour[4] / Color_MAX, Alpha_Contour[4]);//g
+        Stage_Contour[5].color = new Color(Red_Contour[5] / Color_MAX, Green_Contour[5] / Color_MAX, Blue_Contour[5] / Color_MAX, Alpha_Contour[5]);//e
     }
     //エフェクトに反映
     void Effect_Stage()
     {
-        Stage_Effect[0].color = new Color(Red_Effect[0], Green_Effect[0], Blue_Effect[0], Alpha_Effect[0]);//数字
-        Stage_Effect[1].color = new Color(Red_Effect[1], Green_Effect[1], Blue_Effect[1], Alpha_Effect[1]);//s
-        Stage_Effect[2].color = new Color(Red_Effect[2], Green_Effect[2], Blue_Effect[2], Alpha_Effect[2]);//t
-        Stage_Effect[3].color = new Color(Red_Effect[3], Green_Effect[3], Blue_Effect[3], Alpha_Effect[3]);//a
-        Stage_Effect[4].color = new Color(Red_Effect[4], Green_Effect[4], Blue_Effect[4], Alpha_Effect[4]);//g
-        Stage_Effect[5].color = new Color(Red_Effect[5], Green_Effect[5], Blue_Effect[5], Alpha_Effect[5]);//e
+        Stage_Effect[0].color = new Color(Red_Effect[0] / Color_MAX, Green_Effect[0] / Color_MAX, Blue_Effect[0] / Color_MAX, Alpha_Effect[0]);//数字
+        Stage_Effect[1].color = new Color(Red_Effect[1] / Color_MAX, Green_Effect[1] / Color_MAX, Blue_Effect[1] / Color_MAX, Alpha_Effect[1]);//s
+        Stage_Effect[2].color = new Color(Red_Effect[2] / Color_MAX, Green_Effect[2] / Color_MAX, Blue_Effect[2] / Color_MAX, Alpha_Effect[2]);//t
+        Stage_Effect[3].color = new Color(Red_Effect[3] / Color_MAX, Green_Effect[3] / Color_MAX, Blue_Effect[3] / Color_MAX, Alpha_Effect[3]);//a
+        Stage_Effect[4].color = new Color(Red_Effect[4] / Color_MAX, Green_Effect[4] / Color_MAX, Blue_Effect[4] / Color_MAX, Alpha_Effect[4]);//g
+        Stage_Effect[5].color = new Color(Red_Effect[5] / Color_MAX, Green_Effect[5] / Color_MAX, Blue_Effect[5] / Color_MAX, Alpha_Effect[5]);//e
     }
     
     //初期

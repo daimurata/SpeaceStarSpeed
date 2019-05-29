@@ -12,6 +12,8 @@ public class CameraMoveScript : MonoBehaviour
     [SerializeField] private GameObject SubCamera;
     //プレイヤーをアタッチ、これをしないと勝手にプレイヤーが動く
     public GameObject MainPlayer;
+    //Timeのオブジェクト（Canvas）をアタッチ
+    public GameObject TimeCanvas;
 
     //移動場所、今は仮なので変更していきます
     public Vector3 target = new Vector3(0, 505, 0);
@@ -54,6 +56,8 @@ public class CameraMoveScript : MonoBehaviour
                 PlayerGravity.useGravity = true;
                 //PlayerMoveのスクリプトをtrueにする
                 MainPlayer.GetComponent<PlayerMove>().enabled = true;
+                //TimeのCanvasをTrueにして表示させる
+                TimeCanvas.SetActive(true);
             }
         }
         

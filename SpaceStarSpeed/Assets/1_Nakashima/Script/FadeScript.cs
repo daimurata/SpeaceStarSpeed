@@ -21,8 +21,8 @@ public class FadeScript : MonoBehaviour
     //フェードを反映させる画像
     public Image FadeImage;
     //キャンバス自体
-    public GameObject FadeButton1;
-    public GameObject FadeButton2;
+    //public GameObject FadeButton1;
+    //public GameObject FadeButton2;
 
     //シーンの名前、Inspectorで入力必須
     public string SceneName;
@@ -105,8 +105,8 @@ public class FadeScript : MonoBehaviour
             isFadeOut = false;
 
             //ボタンの表示をオフ
-            FadeButton1.SetActive (false);
-            FadeButton2.SetActive (false);
+            //FadeButton1.SetActive (false);
+            //FadeButton2.SetActive (false);
 
             //シーン移動
             SceneManager.LoadScene(SceneName);

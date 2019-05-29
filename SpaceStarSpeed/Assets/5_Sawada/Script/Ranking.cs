@@ -78,7 +78,7 @@ public class Ranking : MonoBehaviour
             point6 = 3600;
         }
         //ランキングを初期化
-       PlayerPrefs.DeleteAll();
+       //PlayerPrefs.DeleteAll();
         //ランキング呼び出し
         GetRanking();
         //ランキングを書き込む

@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     //ここでは主にプレイヤー周りに関することを追加していく予定（Moveってあるけど移動だけじゃないよ）
 
     //プレイヤー
-    public GameObject player;   //オブジェクト
+    //public GameObject player;   //オブジェクト
     private Vector3 player_pos;
     
     float alpha_Sin;    //色
@@ -18,11 +18,16 @@ public class PlayerMove : MonoBehaviour
     public Rigidbody rb;
     //速度が足りているかの判定する為の変数
     public float Pmagnitude = 0.05f;
+
+    //音源
+    public SoundManager soundManager;
+    // soundManager.Soundtekito();のようなものをSEを入れたい場所に入れていく
+    
     // Start is called before the first frame update
     void Start()
     {
         //自キャラのオブジェクト取得
-        player = GetComponent<GameObject>();
+        //player = GetComponent<GameObject>();
 
         
 

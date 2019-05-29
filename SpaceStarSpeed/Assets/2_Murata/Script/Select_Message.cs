@@ -25,6 +25,8 @@ public class Select_Message : MonoBehaviour
     //切替
     public bool[] Change_Body, Change_Contour, Change_Effect;
 
+    private float Color_MAX=255.0f;
+
     /// <summary>
     /// 【本体】【初期設定】
     /// </summary>
@@ -71,9 +73,9 @@ public class Select_Message : MonoBehaviour
     //【本体】初期設定
     void Body_Set()
     {
-        Red_Color_Body();//赤
-        Green_Color_Body();//緑
-        Blue_Color_Body();//青
+        //Red_Color_Body();//赤
+        //Green_Color_Body();//緑
+        //Blue_Color_Body();//青
         Alpha_Color_Body();//α値
     }
    
@@ -123,9 +125,9 @@ public class Select_Message : MonoBehaviour
     //【輪郭】初期設定
     void Contour_Set()
     {
-        Red_Color_Contour();//赤
-        Green_Color_Contour();//緑
-        Blue_Color_Contour();//青
+       // Red_Color_Contour();//赤
+       // Green_Color_Contour();//緑
+       // Blue_Color_Contour();//青
         Alpha_Color_Contour();//α値
     }
     /// <summary>
@@ -174,9 +176,9 @@ public class Select_Message : MonoBehaviour
     //【エフェクト】初期設定
     void Effect_Set()
     {
-        Red_Color_Effect();//赤
-        Green_Color_Effect();//緑
-        Blue_Color_Effect();//青
+       // Red_Color_Effect();//赤
+       // Green_Color_Effect();//緑
+       // Blue_Color_Effect();//青
         Alpha_Color_Effect();//α値
     }
     
@@ -187,7 +189,7 @@ public class Select_Message : MonoBehaviour
         //Numberの数ループ
         for (int i = 0; i < Number; ++i)
         {
-            Blink_Body[i].color = new Color(Red_Body[i], Green_Body[i], Blue_Body[i], Alpha_Body[i]);//文字
+            Blink_Body[i].color = new Color(Red_Body[i] / Color_MAX, Green_Body[i] / Color_MAX, Blue_Body[i] / Color_MAX, Alpha_Body[i]);//文字
         }
         return;//繰り返し
 
@@ -198,7 +200,7 @@ public class Select_Message : MonoBehaviour
         //Numberの数ループ
         for (int i = 0; i < Number; ++i)
         {
-            Blink_Contour[i].color = new Color(Red_Contour[i], Green_Contour[i], Blue_Contour[i], Alpha_Contour[i]);//文字
+            Blink_Contour[i].color = new Color(Red_Contour[i] / Color_MAX, Green_Contour[i] / Color_MAX, Blue_Contour[i] / Color_MAX, Alpha_Contour[i]);//文字
         }
         return;//繰り返し
     }
@@ -208,7 +210,7 @@ public class Select_Message : MonoBehaviour
         //Numberの数ループ
         for (int i = 0; i < Number; ++i)
         {
-            Blink_Effect[i].color = new Color(Red_Effect[i], Green_Effect[i], Blue_Efect[i], Alpha_Effect[i]);//文字
+            Blink_Effect[i].color = new Color(Red_Effect[i] / Color_MAX, Green_Effect[i] / Color_MAX, Blue_Efect[i] / Color_MAX, Alpha_Effect[i]);//文字
         }
         return;//繰り返し
     }

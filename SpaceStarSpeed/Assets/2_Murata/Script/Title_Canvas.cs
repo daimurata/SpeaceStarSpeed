@@ -30,7 +30,9 @@ public class Title_Canvas : MonoBehaviour
     public float Time_Count = 0.0f;
 
     //赤、青、緑　
-    public float Red=1.0f, Blue=1.0f, Green=1.0f;
+    public float[] Red, Blue, Green;
+
+    private int Color_MAX = 255;
 
     //シーン移動時間
     public float Go_toTime = 2;
@@ -38,105 +40,107 @@ public class Title_Canvas : MonoBehaviour
     void Alpha_Configuration()
     {
         //α値初期0表示
-        Alpha[0] = 0.0f;//母体 01
-        Alpha[1] = 0.0f;//輪郭 02
-        Alpha[2] = 0.0f;//エフェクト 03
+        for (int i=0;i<3;++i)
+        {
+            Alpha[i] = 0.0f;//α値初期
+        }
+        return;//繰り返す
     }
 
     //母体1グループ
     void Body_Set()
     {
         //START文字母体
-        Text_Body[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//S
-        Text_Body[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//T
-        Text_Body[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//A
-        Text_Body[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//R
-        Text_Body[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//T2
+        for (int i=0;i<5;++i)
+        {
+            Text_Body[i].GetComponent<Image>().color = new Color(Red[0]/ Color_MAX, Green[0]/ Color_MAX, Blue[0]/ Color_MAX, Alpha[0]);//文字
+        }
+        return;//繰り返す
     }
     //輪郭2グループ
     void Contour_Set()
     {
         //START文字輪郭
-        Text_Contour[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//S
-        Text_Contour[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//T
-        Text_Contour[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//A
-        Text_Contour[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//R
-        Text_Contour[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//T2
+        for (int i=0;i<5;++i)
+        {
+            Text_Contour[i].GetComponent<Image>().color = new Color(Red[1]/ Color_MAX, Green[1]/ Color_MAX, Blue[1]/ Color_MAX, Alpha[1]);//文字
+        }
+        return;//繰り返す
     }
     //エフェクト3グループ
     void Effect_Set()
     {
         //START文字エフェクト
-        Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//S
-        Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//T
-        Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//A
-        Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//R
-        Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//T2
+        for (int i=0;i<5;++i)
+        {
+            Text_Effect[i].GetComponent<Image>().color = new Color(Red[2]/ Color_MAX, Green[2]/ Color_MAX, Blue[2]/ Color_MAX, Alpha[2]);//文字
+        }
+        return;//繰り返す
     }
 
     //母体の非表示
    void Body_False()
     {
         //母体
-        Text_Body[0].SetActive(false);//1
-        Text_Body[1].SetActive(false);//2
-        Text_Body[2].SetActive(false);//3
-        Text_Body[3].SetActive(false);//4
-        Text_Body[4].SetActive(false);//5
+        for (int i=0;i<5;++i)
+        {
+            Text_Body[i].SetActive(false);//非表示
+        }
+        return;//繰り返す
     }
 
     //母体の表示
     void Body_True()
     {
         //母体
-        Text_Body[0].SetActive(true);//1
-        Text_Body[1].SetActive(true);//2
-        Text_Body[2].SetActive(true);//3
-        Text_Body[3].SetActive(true);//4
-        Text_Body[4].SetActive(true);//5
+        for (int i=0;i<5;++i)
+        {
+            Text_Body[i].SetActive(true);//表示
+        }
+        return;//繰り返す
     }
 
     //輪郭の非表示
     void Contour_False()
     {
         //輪郭
-        Text_Contour[0].SetActive(false);//11
-        Text_Contour[1].SetActive(false);//2
-        Text_Contour[2].SetActive(false);//3
-        Text_Contour[3].SetActive(false);//4
-        Text_Contour[4].SetActive(false);//5
+        for (int i=0;i<5;++i)
+        {
+            Text_Contour[i].SetActive(false);//非表示
+        }
+        return;//繰り返す
     }
 
     //輪郭の表示
     void Contour_True()
     {
         //輪郭
-        Text_Contour[0].SetActive(true);//11
-        Text_Contour[1].SetActive(true);//2
-        Text_Contour[2].SetActive(true);//3
-        Text_Contour[3].SetActive(true);//4
-        Text_Contour[4].SetActive(true);//5
+        for (int i = 0; i < 5; ++i)
+        {
+            Text_Contour[i].SetActive(true);//表示
+        }
+        return;//繰り返す
     }
 
     //エフェクトの非表示
     void Effect_False()
     {
         //エフェクト
-        Text_Effect[0].SetActive(false);//1
-        Text_Effect[1].SetActive(false);//2
-        Text_Effect[2].SetActive(false);//3
-        Text_Effect[3].SetActive(false);//4
-        Text_Effect[4].SetActive(false);//5
+        for (int i = 0; i < 5; ++i)
+        {
+            Text_Effect[i].SetActive(false);//非表示
+        }
+        return;//繰り返す
     }
     //エフェクトの表示
     void Effect_True()
     {
         //エフェクト
-        Text_Effect[0].SetActive(true);//1
-        Text_Effect[1].SetActive(true);//2
-        Text_Effect[2].SetActive(true);//3
-        Text_Effect[3].SetActive(true);//4
-        Text_Effect[4].SetActive(true);//5
+        for (int i = 0; i < 5; ++i)
+        {
+            Text_Effect[i].SetActive(true);//表示
+        }
+        return;//繰り返す
     }
 
 
@@ -202,6 +206,39 @@ public class Title_Canvas : MonoBehaviour
         //シーン移動アニメーション起動
         Change[2] = true;
     }
+    
+    //反映　輪郭
+    void Start_Contour()
+    {
+        //STARTの輪郭
+        for (int i = 0; i < 5; ++i)
+        {
+            Text_Contour[i].GetComponent<Image>().color = new Color(Red[1] / Color_MAX, Green[1] / Color_MAX, Blue[1] / Color_MAX, Alpha[1]);//反映
+        }
+        return;//繰り返す
+    }
+
+    //反映　エフェクト
+    void Start_Effect()
+    {
+        //STARTのエフェクト
+        for (int i = 0; i < 5; ++i)
+        {
+            Text_Effect[i].GetComponent<Image>().color = new Color(Red[2] / Color_MAX, Green[2] / Color_MAX, Blue[2] / Color_MAX, Alpha[2]);//反映
+        }
+        return;//繰り返す
+    }
+
+    //反映　本体
+    void Start_Body()
+    {
+        //STARTの本体
+        for (int i=0;i<5;++i)
+        {
+            Text_Body[i].GetComponent<Image>().color = new Color(Red[0] / Color_MAX, Green[0] / Color_MAX, Blue[0] / Color_MAX, Alpha[0]);//反映
+        }
+        return;//繰り返す
+    }
     //ゆっくリ表示
     void OLL_True()
     {
@@ -212,12 +249,10 @@ public class Title_Canvas : MonoBehaviour
             Contour_True();
             //α値に加算
             Alpha[1] += Alpha_Speed[1];
-            //STARTの輪郭
-            Text_Contour[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//1
-            Text_Contour[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//2
-            Text_Contour[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//3
-            Text_Contour[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//4
-            Text_Contour[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//5
+
+            //輪郭　反映
+            Start_Contour();
+
             //輪郭のα値が100なら
             if (Alpha[1] >= 1.0f)
             {
@@ -233,12 +268,9 @@ public class Title_Canvas : MonoBehaviour
                 Effect_True();
                 //α値に加算
                 Alpha[2] += Alpha_Speed[2];
-                //STARTのエフェクト
-                Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//1
-                Text_Effect[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//2
-                Text_Effect[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//3
-                Text_Effect[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//4
-                Text_Effect[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//5
+
+                //エフェクト　反映
+                Start_Effect();
             }
             //α値が100なら
             if (Alpha[2] >= 1.0f)
@@ -255,12 +287,9 @@ public class Title_Canvas : MonoBehaviour
                 Body_True();
                 //α値に加算
                 Alpha[0] += Alpha_Speed[0];
-                //STARTの母体
-                Text_Body[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//1
-                Text_Body[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//2
-                Text_Body[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//3
-                Text_Body[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//4
-                Text_Body[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//5
+
+                //本体　反映
+                Start_Body();
             }
             //α値が100なら
             if (Alpha[0] >= 1.0f)
@@ -306,12 +335,8 @@ public class Title_Canvas : MonoBehaviour
     {
         //α値の早さ
         Alpha_Speed[2] = 1.5f;
-        //STARTのエフェクト
-        Text_Effect[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//1
-        Text_Effect[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//2
-        Text_Effect[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//3
-        Text_Effect[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//4
-        Text_Effect[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[2]);//5
+        //STARTのエフェクト 反映
+        Start_Effect();
 
         //Blink[0]がtrueなら
         if (Blink[2] == true)
@@ -348,12 +373,9 @@ public class Title_Canvas : MonoBehaviour
     {
         //α値の早さ
         Alpha_Speed[1] = 1.0f;
-        //STARTの輪郭
-        Text_Contour[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//1
-        Text_Contour[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//2
-        Text_Contour[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//3
-        Text_Contour[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//4
-        Text_Contour[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[1]);//5
+
+        //輪郭 反映
+        Start_Contour();
 
         //Blink[1]がtrueなら
         if (Blink[1] == true)
@@ -390,12 +412,9 @@ public class Title_Canvas : MonoBehaviour
     {
         //α値の早さ
         Alpha_Speed[0] = 0.5f;
-        //STARTの母体
-        Text_Body[0].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//1
-        Text_Body[1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//2
-        Text_Body[2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//3
-        Text_Body[3].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//4
-        Text_Body[4].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, Alpha[0]);//5
+
+        //本体　反映
+        Start_Body();
 
         //Blink[1]がtrueなら
         if (Blink[0] == true)
@@ -437,7 +456,7 @@ public class Title_Canvas : MonoBehaviour
             Contour_Scene();
             Effect_Scene();
             //2秒後に
-            if (Go_toTime >= 0 && Go_toTime <= 3)
+            if (Go_toTime >= 0 && Go_toTime <= 4)
             {
                 //文字表示時間消すため
                 Go_toTime -= Time.deltaTime;
@@ -449,9 +468,9 @@ public class Title_Canvas : MonoBehaviour
                     Alpha[1] -= Alpha_Speed[1] * Time.deltaTime;
                     Alpha[2] -= Alpha_Speed[2] * Time.deltaTime;
                     //Greenを下げる
-                    Green -= Alpha_Speed[0] * Time.deltaTime;
+                    //Green[0] -= Alpha_Speed[0] * Time.deltaTime;
                     //Blueを下げる
-                    Blue -= Alpha_Speed[0] * Time.deltaTime;
+                    //Blue[0] -= Alpha_Speed[0] * Time.deltaTime;
 
                     //α値が0以下なら
                     if (Alpha[0] < 0.0f)
@@ -461,9 +480,9 @@ public class Title_Canvas : MonoBehaviour
                         Alpha[1] = 0.0f;
                         Alpha[2] = 0.0f;
                         //Green
-                        Green = 0.0f;
+                        //Green[0] = 0.0f;
                         //Blue
-                        Blue = 0.0f;
+                        //Blue[0] = 0.0f;
                         //Blink[0]をfalse
                         Blink[0] = false;
                     }
@@ -476,9 +495,9 @@ public class Title_Canvas : MonoBehaviour
                     Alpha[1] += Alpha_Speed[1] * Time.deltaTime;
                     Alpha[2] += Alpha_Speed[2] * Time.deltaTime;
                     //Greenを下げる
-                    Green -= Alpha_Speed[0] * Time.deltaTime;
+                    //Green[0] -= Alpha_Speed[0] * Time.deltaTime;
                     //Blueを下げる
-                    Blue -= Alpha_Speed[0] * Time.deltaTime;
+                    //Blue[0] -= Alpha_Speed[0] * Time.deltaTime;
 
                     //α値が0以下なら
                     if (Alpha[0] > 1.0f)
@@ -488,9 +507,9 @@ public class Title_Canvas : MonoBehaviour
                         Alpha[1] = 1.0f;
                         Alpha[2] = 1.0f;
                         //Green
-                        Green = 0.0f;
+                        //Green[0] = 0.0f;
                         //Blue
-                        Blue = 0.0f;
+                        //Blue[0] = 0.0f;
                         //Blink[0]をtrue
                         Blink[0] = true;
                     }
@@ -530,12 +549,8 @@ public class Title_Canvas : MonoBehaviour
         //α値の速さ
         Alpha_Speed[0] = 0.5f;
 
-        //STARTの母体
-        Text_Body[0].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[0]);//1
-        Text_Body[1].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[0]);//2
-        Text_Body[2].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[0]);//3
-        Text_Body[3].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[0]);//4
-        Text_Body[4].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[0]);//5
+        //反映　本体
+        Start_Body();
     }
 
     //輪郭のシーン移動際に変更
@@ -544,14 +559,8 @@ public class Title_Canvas : MonoBehaviour
         //α値の速さ
         Alpha_Speed[1] = 0.5f;
 
-        //STARTのr輪郭
-        Text_Contour[0].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[1]);//1
-        Text_Contour[1].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[1]);//2
-        Text_Contour[2].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[1]);//3
-        Text_Contour[3].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[1]);//4
-        Text_Contour[4].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[1]);//5
-
-
+        //反映　輪郭
+        Start_Contour();
     }
     //エフェクトのシーン移動際に変更
     void Effect_Scene()
@@ -559,11 +568,7 @@ public class Title_Canvas : MonoBehaviour
         //α値の速さ
         Alpha_Speed[2] = 0.5f;
 
-        //STARTのエフェクト
-        Text_Effect[0].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[2]);//1
-        Text_Effect[1].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[2]);//2
-        Text_Effect[2].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[2]);//3
-        Text_Effect[3].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[2]);//4
-        Text_Effect[4].GetComponent<Image>().color = new Color(Red, Green, Blue, Alpha[2]);//5
+        //反映　エフェクト
+        Start_Effect();
     }
 }

@@ -13,6 +13,8 @@ public class Gravity : MonoBehaviour
     public float coefficient;
     //徐々に足すための変数、ごめんなさい変数名後で考えます
     public float a;
+
+    bool isActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +28,14 @@ public class Gravity : MonoBehaviour
     }
     void FixedUpdate()
     {
-        a += Time.deltaTime;
-        //引力の発生場所に向かうまでの距離
-        var direction = planet.transform.position - transform.position;
-        //引力発生場所に力を加える、徐々に速くなる
-        GetComponent<Rigidbody>().AddForce(coefficient * direction * a, ForceMode.Force);
+        if (isActive)
+        {
+            a += Time.deltaTime;
+            //引力の発生場所に向かうまでの距離
+            var direction = planet.transform.position - transform.position;
+            //引力発生場所に力を加える、徐々に速くなる
+            GetComponent<Rigidbody>().AddForce(coefficient * direction * a, ForceMode.Force);
+        }   
     }
     void OnCollisionEnter(Collision col)
     {
@@ -38,5 +43,15 @@ public class Gravity : MonoBehaviour
         {
             Destroy(gameObject);
         }   
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        //プレイヤーが範囲内にいるかの判定
+        //Tag名きまってませーん、仮でPlayer
+        if(other.gameObject.tag == "Player")
+        {
+            isActive = true;
+        }
     }
 }

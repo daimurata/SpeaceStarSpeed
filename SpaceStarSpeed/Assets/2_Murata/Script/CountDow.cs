@@ -51,10 +51,13 @@ public class CountDow : MonoBehaviour
     //α値星1～3
     public float[] Alpha_One_Star, Alpha_Second_Star, Alpha_Third_Star;
 
+    //EF RGB
+    public float RED_EF, GREEN_EF, BLUE_EF;
 
     //数字【星数】、文字【テキスト】
     public int Number,Text;
 
+    private int MAX = 255;
     /// <summary>
     /// 【文字】【非表示】
     /// </summary>
@@ -208,15 +211,15 @@ public class CountDow : MonoBehaviour
         {
             Alpha_Zero[i] = 0.0f;
             //Gの本体,輪郭,エフェクト,α値
-            Count_Zero1[i].GetComponent<Image>().color = new Color(Red_Zero[i], Green_Zero[i], Blue_Zero[i], Alpha_Zero[i]);
+            Count_Zero1[i].GetComponent<Image>().color = new Color(Red_Zero[i]/MAX, Green_Zero[i] / MAX, Blue_Zero[i] / MAX, Alpha_Zero[i]);
             //Oの本体,輪郭,エフェクト,α値
-            Count_Zero2[i].GetComponent<Image>().color = new Color(Red_Zero[i], Green_Zero[i], Blue_Zero[i], Alpha_Zero[i]);
+            Count_Zero2[i].GetComponent<Image>().color = new Color(Red_Zero[i] / MAX, Green_Zero[i] / MAX, Blue_Zero[i] / MAX, Alpha_Zero[i]);
             //1の本体,輪郭,エフェクト,α値
-            Count_1[i].GetComponent<Image>().color = new Color(Red_One[i], Green_One[i], Blue_One[i], Alpha_One[i]);
+            Count_1[i].GetComponent<Image>().color = new Color(Red_One[i] / MAX, Green_One[i] / MAX, Blue_One[i] / MAX, Alpha_One[i]);
             //2の本体,輪郭,エフェクト,α値
-            Count_2[i].GetComponent<Image>().color = new Color(Red_Second[i], Green_Second[i], Blue_Second[i], Alpha_Second[i]);
+            Count_2[i].GetComponent<Image>().color = new Color(Red_Second[i] / MAX, Green_Second[i] / MAX, Blue_Second[i] / MAX, Alpha_Second[i]);
             //3の本体,輪郭,エフェクト,α値
-            Count_3[i].GetComponent<Image>().color = new Color(Red_Third[i], Green_Third[i], Blue_Third[i], Alpha_Third[i]);
+            Count_3[i].GetComponent<Image>().color = new Color(Red_Third[i] / MAX, Green_Third[i] / MAX, Blue_Third[i] / MAX, Alpha_Third[i]);
         }
         return;//繰り返す
     }
@@ -227,7 +230,7 @@ public class CountDow : MonoBehaviour
         //星1～12本体
         for (int i=0;i<Number;++i)
         {
-            Star_1[i].GetComponent<Image>().color = new Color(Red_One_Star[i], Green_One_Star[i], Blue_One_Star[i], Alpha_One_Star[i]);
+            Star_1[i].GetComponent<Image>().color = new Color(Red_One_Star[i] / MAX, Green_One_Star[i] / MAX, Blue_One_Star[i] / MAX, Alpha_One_Star[i]);
         }
         return;//繰り返す
     }
@@ -237,7 +240,7 @@ public class CountDow : MonoBehaviour
         //星1～12本体
         for (int i=0;i<Number;++i)
         {
-            StarEF_1[i].GetComponent<Image>().color = new Color(Red_One_Star[i], Green_One_Star[i], Blue_One_Star[i], Alpha_One_Star[i]);//星
+            StarEF_1[i].GetComponent<Image>().color = new Color(RED_EF / MAX, GREEN_EF / MAX, BLUE_EF / MAX, Alpha_One_Star[i]);//星
         }
         return;//繰り返す
     }
@@ -247,7 +250,7 @@ public class CountDow : MonoBehaviour
         //星1～12本体
         for (int i=0;i<Number;++i)
         {
-            Star_2[i].GetComponent<Image>().color = new Color(Red_Second_Star[i], Green_Second_Star[i],Blue_Second_Star[i] , Alpha_Second_Star[i]);//星
+            Star_2[i].GetComponent<Image>().color = new Color(Red_Second_Star[i] / MAX, Green_Second_Star[i] / MAX, Blue_Second_Star[i] / MAX, Alpha_Second_Star[i]);//星
         }
         return;//繰り返す
     }
@@ -257,7 +260,7 @@ public class CountDow : MonoBehaviour
         //星1～12本体
         for (int i=0;i<Number;++i)
         {
-            StarEF_2[i].GetComponent<Image>().color = new Color(Red_Second_Star[i], Green_Second_Star[i], Blue_Second_Star[i], Alpha_Second_Star[i]);//星
+            StarEF_2[i].GetComponent<Image>().color = new Color(RED_EF / MAX, GREEN_EF / MAX, BLUE_EF / MAX, Alpha_Second_Star[i]);//星
         }
         return;//繰り返す
     }
@@ -267,7 +270,7 @@ public class CountDow : MonoBehaviour
         //星1～12本体
         for(int i=0;i<Number;++i)
         {
-            Star_3[i].GetComponent<Image>().color = new Color(Red_Third_Star[i], Green_Third_Star[i], Blue_Third_Star[i], Alpha_Third_Star[i]);//星
+            Star_3[i].GetComponent<Image>().color = new Color(Red_Third_Star[i] / MAX, Green_Third_Star[i] / MAX, Blue_Third_Star[i] / MAX, Alpha_Third_Star[i]);//星
         }
         return;//繰り返す
     }
@@ -277,7 +280,7 @@ public class CountDow : MonoBehaviour
         //星1～12本体
         for (int i=0;i<Number;++i)
         {
-            StarEF_3[i].GetComponent<Image>().color = new Color(Red_Third_Star[i], Green_Third_Star[i], Blue_Third_Star[i], Red_Third_Star[i]);
+            StarEF_3[i].GetComponent<Image>().color = new Color(RED_EF / MAX, GREEN_EF / MAX, BLUE_EF / MAX, Alpha_Third_Star[i]);
         }
     }
 
@@ -385,13 +388,13 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_Third[0] += Alpha_Speed;
                 //3の母体α値100％
-                Count_3[0].GetComponent<Image>().color = new Color(Red_Third[0], Green_Third[0], Blue_Third[0], Alpha_Third[0]);
+                Count_3[0].GetComponent<Image>().color = new Color(Red_Third[0] / MAX, Green_Third[0] / MAX, Blue_Third[0] / MAX, Alpha_Third[0]);
             }
 
             //3の輪郭表示
             Count_3[1].SetActive(true);
             //3の輪郭α値100％
-            Count_3[1].GetComponent<Image>().color = new Color(Red_Third[1], Green_Third[1], Blue_Third[1], Alpha_Third[1]);
+            Count_3[1].GetComponent<Image>().color = new Color(Red_Third[1] / MAX, Green_Third[1] / MAX, Blue_Third[1] / MAX, Alpha_Third[1]);
             //3の文字エフェクト表示時間
             if (Time_Count <= 3.8f)
             {
@@ -400,7 +403,7 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_Third[2] += Alpha_Speed;
                 //3のエフェクトα値100％
-                Count_3[2].GetComponent<Image>().color = new Color(Red_Third[2], Green_Third[2], Blue_Third[2], Alpha_Third[2]);
+                Count_3[2].GetComponent<Image>().color = new Color(Red_Third[2] / MAX, Green_Third[2] / MAX, Blue_Third[2] / MAX, Alpha_Third[2]);
             }
         }
         //3秒以下なら2の文字表示【文字】
@@ -438,13 +441,13 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_Second[0] += Alpha_Speed;
                 //2の文字母体α値100％
-                Count_2[0].GetComponent<Image>().color = new Color(Red_Second[0], Green_Second[0], Blue_Second[0], Alpha_Second[0]);
+                Count_2[0].GetComponent<Image>().color = new Color(Red_Second[0] / MAX, Green_Second[0] / MAX, Blue_Second[0] / MAX, Alpha_Second[0]);
             }
 
             //2の文字輪郭表示
             Count_2[1].SetActive(true);
             //2の文字輪郭α値100％
-            Count_2[1].GetComponent<Image>().color = new Color(Red_Second[1], Green_Second[1], Blue_Second[1], Alpha_Second[1]);
+            Count_2[1].GetComponent<Image>().color = new Color(Red_Second[1] / MAX, Green_Second[1] / MAX, Blue_Second[1] / MAX, Alpha_Second[1]);
 
             //2の文字エフェクト表示時間
             if (Time_Count <= 2.8f)
@@ -454,7 +457,7 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_Second[2] += Alpha_Speed;
                 //2の文字エフェクトα値100％
-                Count_2[2].GetComponent<Image>().color = new Color(Red_Second[2], Green_Second[2], Blue_Second[2], Alpha_Second[2]);
+                Count_2[2].GetComponent<Image>().color = new Color(Red_Second[2] / MAX, Green_Second[2] / MAX, Blue_Second[2] / MAX, Alpha_Second[2]);
             }
         }
         //2秒以下なら1の文字表示【文字】
@@ -488,13 +491,13 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_One[0] += Alpha_Speed;
                 //1の文字母体α値100％
-                Count_1[0].GetComponent<Image>().color = new Color(Red_One[0], Green_One[0], Blue_One[0], Alpha_One[0]);
+                Count_1[0].GetComponent<Image>().color = new Color(Red_One[0] / MAX, Green_One[0] / MAX, Blue_One[0] / MAX, Alpha_One[0]);
             }
 
             //1の文字輪郭表示
             Count_1[1].SetActive(true);
             //1の文字輪郭α値100％
-            Count_1[1].GetComponent<Image>().color = new Color(Red_One[1], Green_One[1], Blue_One[1], Alpha_One[1]);
+            Count_1[1].GetComponent<Image>().color = new Color(Red_One[1] / MAX, Green_One[1] / MAX, Blue_One[1] / MAX, Alpha_One[1]);
             //1の文字エフェクト表示時間
             if (Time_Count <= 1.8f)
             {
@@ -503,7 +506,7 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_One[2] += Alpha_Speed;
                 //1の文字エフェクト表示α値100％
-                Count_1[2].GetComponent<Image>().color = new Color(Red_One[2], Green_One[2], Blue_One[2], Alpha_One[2]);
+                Count_1[2].GetComponent<Image>().color = new Color(Red_One[2] / MAX, Green_One[2] / MAX, Blue_One[2] / MAX, Alpha_One[2]);
             }
         }
         //1秒以下ならGOの文字表示【文字】
@@ -533,23 +536,23 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_Zero[0] += Alpha_Speed;
                 //Gの文字母体α値100％
-                Count_Zero1[0].GetComponent<Image>().color = new Color(Red_Zero[0], Green_Zero[0], Blue_Zero[0], Alpha_Zero[0]);
+                Count_Zero1[0].GetComponent<Image>().color = new Color(Red_Zero[0] / MAX, Green_Zero[0] / MAX, Blue_Zero[0] / MAX, Alpha_Zero[0]);
 
                 //Oの文字母体表示
                 Count_Zero2[0].SetActive(true);
                 //Oの文字母体α値100％
-                Count_Zero2[0].GetComponent<Image>().color = new Color(Red_Zero[0], Green_Zero[0], Blue_Zero[0], Alpha_Zero[0]);
+                Count_Zero2[0].GetComponent<Image>().color = new Color(Red_Zero[0] / MAX, Green_Zero[0] / MAX, Blue_Zero[0] / MAX, Alpha_Zero[0]);
             }
 
             //Gの文字輪郭表示
             Count_Zero1[1].SetActive(true);
             //Gの文字輪郭α値100％
-            Count_Zero1[1].GetComponent<Image>().color = new Color(Red_Zero[1], Green_Zero[1], Blue_Zero[1], Alpha_Zero[1]);
+            Count_Zero1[1].GetComponent<Image>().color = new Color(Red_Zero[1] / MAX, Green_Zero[1] / MAX, Blue_Zero[1] / MAX, Alpha_Zero[1]);
 
             //Oの文字輪郭表示
             Count_Zero2[1].SetActive(true);
             //Oの文字輪郭α値100％
-            Count_Zero2[1].GetComponent<Image>().color = new Color(Red_Zero[1], Green_Zero[1], Blue_Zero[1], Alpha_Zero[1]);
+            Count_Zero2[1].GetComponent<Image>().color = new Color(Red_Zero[1] / MAX, Green_Zero[1] / MAX, Blue_Zero[1] / MAX, Alpha_Zero[1]);
 
             //GOの文字表示時間
             if (Time_Count <= 0.8f)
@@ -559,12 +562,12 @@ public class CountDow : MonoBehaviour
                 //α値加算
                 Alpha_Zero[2] += Alpha_Speed;
                 //Gの文字エフェクトα値100％
-                Count_Zero1[2].GetComponent<Image>().color = new Color(Red_Zero[2], Green_Zero[2], Blue_Zero[2] ,Alpha_Zero[2]);
+                Count_Zero1[2].GetComponent<Image>().color = new Color(Red_Zero[2] / MAX, Green_Zero[2] / MAX, Blue_Zero[2] / MAX, Alpha_Zero[2]);
 
                 //Oの文字エフェクト表示
                 Count_Zero2[2].SetActive(true);
                 //Oの文字エフェクトα値100％
-                Count_Zero2[2].GetComponent<Image>().color = new Color(Red_Zero[2], Green_Zero[2], Blue_Zero[2], Alpha_Zero[2]);
+                Count_Zero2[2].GetComponent<Image>().color = new Color(Red_Zero[2] / MAX, Green_Zero[2] / MAX, Blue_Zero[2] / MAX, Alpha_Zero[2]);
             }
         }
         //0秒以下になったら全て非表示
@@ -667,7 +670,7 @@ public class CountDow : MonoBehaviour
         {
             Alpha_One_Star[i] = 1.0f;//α値表示
             //StarEF_3[i].SetActive(true);//表示【エフェクト】
-            StarEF_3[i].GetComponent<Image>().color = new Color(Red_Third_Star[i], Green_Third_Star[i], Blue_Third_Star[i], Alpha_Third_Star[i]);//α表示
+            StarEF_3[i].GetComponent<Image>().color = new Color(RED_EF / MAX, GREEN_EF / MAX, BLUE_EF / MAX, Alpha_Third_Star[i]);//α表示
         }return;//繰り返す
     }
 
@@ -684,14 +687,14 @@ public class CountDow : MonoBehaviour
         {
             //星本体1表示
             Star_3[0].SetActive(true);
-            Star_3[0].GetComponent<Image>().color = new Color(Red_Third_Star[0], Green_Third_Star[0], Blue_Third_Star[0], Alpha_Third_Star[0]);//α表示
+            Star_3[0].GetComponent<Image>().color = new Color(Red_Third_Star[0] / MAX, Green_Third_Star[0] / MAX, Blue_Third_Star[0] / MAX, Alpha_Third_Star[0]);//α表示
         }
         //星2表示
         if (Time_Count<=3.84f)
         {
             //星本体2表示
             Star_3[1].SetActive(true);
-            Star_3[1].GetComponent<Image>().color = new Color(Red_Third_Star[1], Green_Third_Star[1], Blue_Third_Star[1], Alpha_Third_Star[1]);//α表示
+            Star_3[1].GetComponent<Image>().color = new Color(Red_Third_Star[1] / MAX, Green_Third_Star[1] / MAX, Blue_Third_Star[1] / MAX, Alpha_Third_Star[1]);//α表示
             //星本体1非表示
             Star_3[0].SetActive(false);
             //星エフェクト1非表示
@@ -705,7 +708,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体3表示
             Star_3[2].SetActive(true);
-            Star_3[2].GetComponent<Image>().color = new Color(Red_Third_Star[2], Green_Third_Star[2], Blue_Third_Star[2], Alpha_Third_Star[2]);//α表示
+            Star_3[2].GetComponent<Image>().color = new Color(Red_Third_Star[2] / MAX, Green_Third_Star[2] / MAX, Blue_Third_Star[2] / MAX, Alpha_Third_Star[2]);//α表示
             //星本体2非表示
             Star_3[1].SetActive(false);
             //星エフェクト2非表示
@@ -719,7 +722,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体4表示
             Star_3[3].SetActive(true);
-            Star_3[3].GetComponent<Image>().color = new Color(Red_Third_Star[3], Green_Third_Star[3], Blue_Third_Star[3], Alpha_Third_Star[3]);//α表示
+            Star_3[3].GetComponent<Image>().color = new Color(Red_Third_Star[3] / MAX, Green_Third_Star[3] / MAX, Blue_Third_Star[3] / MAX, Alpha_Third_Star[3]);//α表示
             //星本体3非表示
             Star_3[2].SetActive(false);
             //星エフェクト3非表示
@@ -733,7 +736,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体5表示
             Star_3[4].SetActive(true);
-            Star_3[4].GetComponent<Image>().color = new Color(Red_Third_Star[4], Green_Third_Star[4], Blue_Third_Star[4], Alpha_Third_Star[4]);//α表示
+            Star_3[4].GetComponent<Image>().color = new Color(Red_Third_Star[4] / MAX, Green_Third_Star[4] / MAX, Blue_Third_Star[4] / MAX, Alpha_Third_Star[4]);//α表示
             //星本体4非表示
             Star_3[3].SetActive(false);
             //星エフェクト4非表示
@@ -747,7 +750,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体6表示
             Star_3[5].SetActive(true);
-            Star_3[5].GetComponent<Image>().color = new Color(Red_Third_Star[5], Green_Third_Star[5], Blue_Third_Star[5], Alpha_Third_Star[5]);//α表示
+            Star_3[5].GetComponent<Image>().color = new Color(Red_Third_Star[5] / MAX, Green_Third_Star[5] / MAX, Blue_Third_Star[5] / MAX, Alpha_Third_Star[5]);//α表示
             //星本体5非表示
             Star_3[4].SetActive(false);
             //星エフェクト5非表示
@@ -761,7 +764,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体7表示
             Star_3[6].SetActive(true);
-            Star_3[6].GetComponent<Image>().color = new Color(Red_Third_Star[6], Green_Third_Star[6], Blue_Third_Star[6], Alpha_Third_Star[6]);//α表示
+            Star_3[6].GetComponent<Image>().color = new Color(Red_Third_Star[6] / MAX, Green_Third_Star[6] / MAX, Blue_Third_Star[6] / MAX, Alpha_Third_Star[6]);//α表示
             //星本体6非表示
             Star_3[5].SetActive(false);
             //星エフェクト6非表示
@@ -775,7 +778,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体8表示
             Star_3[7].SetActive(true);
-            Star_3[7].GetComponent<Image>().color = new Color(Red_Third_Star[7], Green_Third_Star[7], Blue_Third_Star[7], Alpha_Third_Star[7]);//α表示
+            Star_3[7].GetComponent<Image>().color = new Color(Red_Third_Star[7] / MAX, Green_Third_Star[7] / MAX, Blue_Third_Star[7] / MAX, Alpha_Third_Star[7]);//α表示
             //星本体7非表示
             Star_3[6].SetActive(false);
             //星エフェクト7非表示
@@ -789,7 +792,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体9表示
             Star_3[8].SetActive(true);
-            Star_3[8].GetComponent<Image>().color = new Color(Red_Third_Star[8], Green_Third_Star[8], Blue_Third_Star[8], Alpha_Third_Star[8]);//α表示
+            Star_3[8].GetComponent<Image>().color = new Color(Red_Third_Star[8] / MAX, Green_Third_Star[8] / MAX, Blue_Third_Star[8] / MAX, Alpha_Third_Star[8]);//α表示
             //星本体8非表示
             Star_3[7].SetActive(false);
             //星エフェクト8非表示
@@ -803,7 +806,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体10表示
             Star_3[9].SetActive(true);
-            Star_3[9].GetComponent<Image>().color = new Color(Red_Third_Star[9], Green_Third_Star[9], Blue_Third_Star[9], Alpha_Third_Star[9]);//α表示
+            Star_3[9].GetComponent<Image>().color = new Color(Red_Third_Star[9] / MAX, Green_Third_Star[9] / MAX, Blue_Third_Star[9] / MAX, Alpha_Third_Star[9]);//α表示
             //星本体9非表示
             Star_3[8].SetActive(false);
             //星エフェクト9非表示
@@ -817,7 +820,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体11表示
             Star_3[10].SetActive(true);
-            Star_3[10].GetComponent<Image>().color = new Color(Red_Third_Star[10], Green_Third_Star[10], Blue_Third_Star[10], Alpha_Third_Star[10]);//α表示
+            Star_3[10].GetComponent<Image>().color = new Color(Red_Third_Star[10] / MAX, Green_Third_Star[10] / MAX, Blue_Third_Star[10] / MAX, Alpha_Third_Star[10]);//α表示
             //星本体10非表示
             Star_3[9].SetActive(false);
             //星エフェクト10非表示
@@ -831,7 +834,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体12表示
             Star_3[11].SetActive(true);
-            Star_3[11].GetComponent<Image>().color = new Color(Red_Third_Star[11], Green_Third_Star[11], Blue_Third_Star[11], Alpha_Third_Star[11]);//α表示
+            Star_3[11].GetComponent<Image>().color = new Color(Red_Third_Star[11] / MAX, Green_Third_Star[11] / MAX, Blue_Third_Star[11] / MAX, Alpha_Third_Star[11]);//α表示
             //星本体11非表示
             Star_3[10].SetActive(false);
             //星エフェクト11非表示
@@ -863,7 +866,7 @@ public class CountDow : MonoBehaviour
             Alpha_Second_Star[i]=1.0f;
             //星エフェクト1表示
             //StarEF_2[i].SetActive(true);
-            StarEF_2[i].GetComponent<Image>().color = new Color(Red_Second_Star[i], Green_Second_Star[i], Blue_Second_Star[i], Alpha_Second_Star[i]);//α表示
+            StarEF_2[i].GetComponent<Image>().color = new Color(RED_EF / MAX, GREEN_EF / MAX, BLUE_EF / MAX, Alpha_Second_Star[i]);//α表示
         }
         return;//繰り返す
     }
@@ -885,7 +888,7 @@ public class CountDow : MonoBehaviour
 
             //星本体1表示
             Star_2[0].SetActive(true);
-            Star_2[0].GetComponent<Image>().color = new Color(Red_Second_Star[0], Green_Second_Star[0], Blue_Second_Star[0], Alpha_Second_Star[0]);//α表示
+            Star_2[0].GetComponent<Image>().color = new Color(Red_Second_Star[0] / MAX, Green_Second_Star[0] / MAX, Blue_Second_Star[0] / MAX, Alpha_Second_Star[0]);//α表示
         }
         //星2表示
         if (Time_Count <= 2.84f)
@@ -895,7 +898,7 @@ public class CountDow : MonoBehaviour
 
             //星本体2表示
             Star_2[1].SetActive(true);
-            Star_2[1].GetComponent<Image>().color = new Color(Red_Second_Star[1], Green_Second_Star[1], Blue_Second_Star[1], Alpha_Second_Star[1]);//α表示
+            Star_2[1].GetComponent<Image>().color = new Color(Red_Second_Star[1] / MAX, Green_Second_Star[1] / MAX, Blue_Second_Star[1] / MAX, Alpha_Second_Star[1]);//α表示
             //星本体1非表示
             Star_2[0].SetActive(false);
             //星エフェクト1非表示
@@ -909,7 +912,7 @@ public class CountDow : MonoBehaviour
 
             //星本体3表示
             Star_2[2].SetActive(true);
-            Star_2[2].GetComponent<Image>().color = new Color(Red_Second_Star[2], Green_Second_Star[2], Blue_Second_Star[2], Alpha_Second_Star[2]);//α表示
+            Star_2[2].GetComponent<Image>().color = new Color(Red_Second_Star[2] / MAX, Green_Second_Star[2] / MAX, Blue_Second_Star[2] / MAX, Alpha_Second_Star[2]);//α表示
             //星本体2非表示
             Star_2[1].SetActive(false);
             //星エフェクト2非表示
@@ -923,7 +926,7 @@ public class CountDow : MonoBehaviour
 
             //星本体4表示
             Star_2[3].SetActive(true);
-            Star_2[3].GetComponent<Image>().color = new Color(Red_Second_Star[3], Green_Second_Star[3], Blue_Second_Star[3], Alpha_Second_Star[3]);//α表示
+            Star_2[3].GetComponent<Image>().color = new Color(Red_Second_Star[3] / MAX, Green_Second_Star[3] / MAX, Blue_Second_Star[3] / MAX, Alpha_Second_Star[3]);//α表示
             //星本体3非表示
             Star_2[2].SetActive(false);
             //星エフェクト3非表示
@@ -937,7 +940,7 @@ public class CountDow : MonoBehaviour
 
             //星本体5表示
             Star_2[4].SetActive(true);
-            Star_2[4].GetComponent<Image>().color = new Color(Red_Second_Star[4], Green_Second_Star[4], Blue_Second_Star[4], Alpha_Second_Star[4]);//α表示
+            Star_2[4].GetComponent<Image>().color = new Color(Red_Second_Star[4] / MAX, Green_Second_Star[4] / MAX, Blue_Second_Star[4] / MAX, Alpha_Second_Star[4]);//α表示
             //星本体4非表示
             Star_2[3].SetActive(false);
             //星エフェクト4非表示
@@ -951,7 +954,7 @@ public class CountDow : MonoBehaviour
 
             //星本体6表示
             Star_2[5].SetActive(true);
-            Star_2[5].GetComponent<Image>().color = new Color(Red_Second_Star[5], Green_Second_Star[5], Blue_Second_Star[5], Alpha_Second_Star[5]);//α表示
+            Star_2[5].GetComponent<Image>().color = new Color(Red_Second_Star[5] / MAX, Green_Second_Star[5] / MAX, Blue_Second_Star[5] / MAX, Alpha_Second_Star[5]);//α表示
             //星本体5非表示
             Star_2[4].SetActive(false);
             //星エフェクト5非表示
@@ -965,7 +968,7 @@ public class CountDow : MonoBehaviour
 
             //星本体7表示
             Star_2[6].SetActive(true);
-            Star_2[6].GetComponent<Image>().color = new Color(Red_Second_Star[6], Green_Second_Star[6], Blue_Second_Star[6], Alpha_Second_Star[6]);//α表示
+            Star_2[6].GetComponent<Image>().color = new Color(Red_Second_Star[6] / MAX, Green_Second_Star[6] / MAX, Blue_Second_Star[6] / MAX, Alpha_Second_Star[6]);//α表示
             //星本体6非表示
             Star_2[5].SetActive(false);
             //星エフェクト6非表示
@@ -979,7 +982,7 @@ public class CountDow : MonoBehaviour
 
             //星本体8表示
             Star_2[7].SetActive(true);
-            Star_2[7].GetComponent<Image>().color = new Color(Red_Second_Star[7], Green_Second_Star[7], Blue_Second_Star[7], Alpha_Second_Star[7]);//α表示
+            Star_2[7].GetComponent<Image>().color = new Color(Red_Second_Star[7] / MAX, Green_Second_Star[7] / MAX, Blue_Second_Star[7] / MAX, Alpha_Second_Star[7]);//α表示
             //星本体7非表示
             Star_2[6].SetActive(false);
             //星エフェクト7非表示
@@ -993,7 +996,7 @@ public class CountDow : MonoBehaviour
 
             //星本体9表示
             Star_2[8].SetActive(true);
-            Star_2[8].GetComponent<Image>().color = new Color(Red_Second_Star[8], Green_Second_Star[8], Blue_Second_Star[8], Alpha_Second_Star[8]);//α表示
+            Star_2[8].GetComponent<Image>().color = new Color(Red_Second_Star[8] / MAX, Green_Second_Star[8] / MAX, Blue_Second_Star[8] / MAX, Alpha_Second_Star[8]);//α表示
             //星本体8非表示
             Star_2[7].SetActive(false);
             //星エフェクト8非表示
@@ -1007,7 +1010,7 @@ public class CountDow : MonoBehaviour
 
             //星本体10表示
             Star_2[9].SetActive(true);
-            Star_2[9].GetComponent<Image>().color = new Color(Red_Second_Star[9], Green_Second_Star[9], Blue_Second_Star[9], Alpha_Second_Star[9]);//α表示
+            Star_2[9].GetComponent<Image>().color = new Color(Red_Second_Star[9] / MAX, Green_Second_Star[9] / MAX, Blue_Second_Star[9] / MAX, Alpha_Second_Star[9]);//α表示
             //星本体9非表示
             Star_2[8].SetActive(false);
             //星エフェクト9非表示
@@ -1021,7 +1024,7 @@ public class CountDow : MonoBehaviour
 
             //星本体11表示
             Star_2[10].SetActive(true);
-            Star_2[10].GetComponent<Image>().color = new Color(Red_Second_Star[10], Green_Second_Star[10], Blue_Second_Star[10], Alpha_Second_Star[10]);//α表示
+            Star_2[10].GetComponent<Image>().color = new Color(Red_Second_Star[10] / MAX, Green_Second_Star[10] / MAX, Blue_Second_Star[10] / MAX, Alpha_Second_Star[10]);//α表示
             //星本体10非表示
             Star_2[9].SetActive(false);
             //星エフェクト10非表示
@@ -1035,7 +1038,7 @@ public class CountDow : MonoBehaviour
 
             //星本体12表示
             Star_2[11].SetActive(true);
-            Star_2[11].GetComponent<Image>().color = new Color(Red_Second_Star[11], Green_Second_Star[11], Blue_Second_Star[11], Alpha_Second_Star[11]);//α表示
+            Star_2[11].GetComponent<Image>().color = new Color(Red_Second_Star[11] / MAX, Green_Second_Star[11] / MAX, Blue_Second_Star[11] / MAX, Alpha_Second_Star[11]);//α表示
             //星本体11非表示
             Star_2[10].SetActive(false);
             //星エフェクト11非表示
@@ -1066,7 +1069,7 @@ public class CountDow : MonoBehaviour
             Alpha_Third_Star[i] = 1.0f;
             //星エフェクト1表示
            // StarEF_1[i].SetActive(true);
-            StarEF_1[i].GetComponent<Image>().color = new Color(Red_One_Star[i],Green_One_Star[i],Blue_One_Star[i],Alpha_One_Star[i]);//α表示
+            StarEF_1[i].GetComponent<Image>().color = new Color(RED_EF / MAX, GREEN_EF / MAX, BLUE_EF / MAX, Alpha_One_Star[i]);//α表示
         }
         return;//繰り返す
     }
@@ -1084,14 +1087,14 @@ public class CountDow : MonoBehaviour
         {
             //星本体1表示
             Star_1[0].SetActive(true);
-            Star_1[0].GetComponent<Image>().color = new Color(Red_One_Star[0], Green_Second_Star[0], Blue_One_Star[0], Alpha_One_Star[0]);//α表示
+            Star_1[0].GetComponent<Image>().color = new Color(Red_One_Star[0] / MAX, Green_Second_Star[0] / MAX, Blue_One_Star[0] / MAX, Alpha_One_Star[0]);//α表示
         }
         //星2表示
         if (Time_Count <= 1.84f)
         {
             //星本体2表示
             Star_1[1].SetActive(true);
-            Star_1[1].GetComponent<Image>().color = new Color(Red_One_Star[1], Green_Second_Star[1], Blue_One_Star[1], Alpha_One_Star[1]);//α表示
+            Star_1[1].GetComponent<Image>().color = new Color(Red_One_Star[1] / MAX, Green_Second_Star[1] / MAX, Blue_One_Star[1] / MAX, Alpha_One_Star[1]);//α表示
             //星本体1非表示
             Star_1[0].SetActive(false);
             //星エフェクト1非表示
@@ -1102,7 +1105,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体3表示
             Star_1[2].SetActive(true);
-            Star_1[2].GetComponent<Image>().color = new Color(Red_One_Star[2], Green_Second_Star[2], Blue_One_Star[2], Alpha_One_Star[2]);//α表示
+            Star_1[2].GetComponent<Image>().color = new Color(Red_One_Star[2] / MAX, Green_Second_Star[2] / MAX, Blue_One_Star[2] / MAX, Alpha_One_Star[2]);//α表示
             //星本体2非表示
             Star_1[1].SetActive(false);
             //星エフェクト2非表示
@@ -1113,7 +1116,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体4表示
             Star_1[3].SetActive(true);
-            Star_1[3].GetComponent<Image>().color = new Color(Red_One_Star[3], Green_Second_Star[3], Blue_One_Star[3], Alpha_One_Star[3]);//α表示
+            Star_1[3].GetComponent<Image>().color = new Color(Red_One_Star[3] / MAX, Green_Second_Star[3] / MAX, Blue_One_Star[3] / MAX, Alpha_One_Star[3]);//α表示
             //星本体3非表示
             Star_1[2].SetActive(false);
             //星エフェクト3非表示
@@ -1124,7 +1127,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体5表示
             Star_1[4].SetActive(true);
-            Star_1[4].GetComponent<Image>().color = new Color(Red_One_Star[4], Green_Second_Star[4], Blue_One_Star[4], Alpha_One_Star[4]);//α表示
+            Star_1[4].GetComponent<Image>().color = new Color(Red_One_Star[4] / MAX, Green_Second_Star[4] / MAX, Blue_One_Star[4] / MAX, Alpha_One_Star[4]);//α表示
             //星本体4非表示
             Star_1[3].SetActive(false);
             //星エフェクト4非表示
@@ -1135,7 +1138,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体6表示
             Star_1[5].SetActive(true);
-            Star_1[5].GetComponent<Image>().color = new Color(Red_One_Star[5], Green_Second_Star[5], Blue_One_Star[5], Alpha_One_Star[5]);//α表示
+            Star_1[5].GetComponent<Image>().color = new Color(Red_One_Star[5] / MAX, Green_Second_Star[5] / MAX, Blue_One_Star[5] / MAX, Alpha_One_Star[5]);//α表示
             //星本体5非表示
             Star_1[4].SetActive(false);
             //星エフェクト5非表示
@@ -1146,7 +1149,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体7表示
             Star_1[6].SetActive(true);
-            Star_1[6].GetComponent<Image>().color = new Color(Red_One_Star[6], Green_Second_Star[6], Blue_One_Star[6], Alpha_One_Star[6]);//α表示
+            Star_1[6].GetComponent<Image>().color = new Color(Red_One_Star[6] / MAX, Green_Second_Star[6] / MAX, Blue_One_Star[6] / MAX, Alpha_One_Star[6]);//α表示
             //星本体6非表示
             Star_1[5].SetActive(false);
             //星エフェクト6非表示
@@ -1157,7 +1160,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体8表示
             Star_1[7].SetActive(true);
-            Star_1[7].GetComponent<Image>().color = new Color(Red_One_Star[7], Green_Second_Star[7], Blue_One_Star[7], Alpha_One_Star[7]);//α表示
+            Star_1[7].GetComponent<Image>().color = new Color(Red_One_Star[7] / MAX, Green_Second_Star[7] / MAX, Blue_One_Star[7] / MAX, Alpha_One_Star[7]);//α表示
             //星本体7非表示
             Star_1[6].SetActive(false);
             //星エフェクト7非表示
@@ -1168,7 +1171,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体9表示
             Star_1[8].SetActive(true);
-            Star_1[8].GetComponent<Image>().color = new Color(Red_One_Star[8], Green_Second_Star[8], Blue_One_Star[8], Alpha_One_Star[8]);//α表示
+            Star_1[8].GetComponent<Image>().color = new Color(Red_One_Star[8] / MAX, Green_Second_Star[8] / MAX, Blue_One_Star[8] / MAX, Alpha_One_Star[8]);//α表示
             //星本体8非表示
             Star_1[7].SetActive(false);
             //星エフェクト8非表示
@@ -1179,7 +1182,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体10表示
             Star_1[9].SetActive(true);
-            Star_1[9].GetComponent<Image>().color = new Color(Red_One_Star[9], Green_Second_Star[9], Blue_One_Star[9], Alpha_One_Star[9]);//α表示
+            Star_1[9].GetComponent<Image>().color = new Color(Red_One_Star[9] / MAX, Green_Second_Star[9] / MAX, Blue_One_Star[9] / MAX, Alpha_One_Star[9]);//α表示
             //星本体9非表示
             Star_1[8].SetActive(false);
             //星エフェクト9非表示
@@ -1190,7 +1193,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体11表示
             Star_1[10].SetActive(true);
-            Star_1[10].GetComponent<Image>().color = new Color(Red_One_Star[10], Green_Second_Star[10], Blue_One_Star[10], Alpha_One_Star[10]);//α表示
+            Star_1[10].GetComponent<Image>().color = new Color(Red_One_Star[10] / MAX, Green_Second_Star[10] / MAX, Blue_One_Star[10] / MAX, Alpha_One_Star[10]);//α表示
             //星本体10非表示
             Star_1[9].SetActive(false);
             //星エフェクト10非表示
@@ -1201,7 +1204,7 @@ public class CountDow : MonoBehaviour
         {
             //星本体12表示
             Star_1[11].SetActive(true);
-            Star_1[11].GetComponent<Image>().color = new Color(Red_One_Star[11], Green_Second_Star[11], Blue_One_Star[11], Alpha_One_Star[11]);//α表示
+            Star_1[11].GetComponent<Image>().color = new Color(Red_One_Star[11] / MAX, Green_Second_Star[11] / MAX, Blue_One_Star[11] / MAX, Alpha_One_Star[11]);//α表示
             //星本体11非表示
             Star_1[10].SetActive(false);
             //星エフェクト11非表示

@@ -11,7 +11,7 @@ public class CameraMoveScript : MonoBehaviour
     //サブカメラ、ステージを見渡す際に使用するカメラ
     [SerializeField] private GameObject SubCamera;
     //プレイヤーをアタッチ、これをしないと勝手にプレイヤーが動く
-    public GameObject MainPlayer;
+    public Rigidbody MainPlayer;
     //Timeのオブジェクト（Canvas）をアタッチ
     public GameObject TimeCanvas;
 
@@ -21,10 +21,15 @@ public class CameraMoveScript : MonoBehaviour
     private float speed = 300.0f;
     //カメラの変更がループしないために用意
     bool CameraChangeBool = true;
+
+    CountDow countDow;
     // Start is called before the first frame update
     void Start()
     {
-     
+        countDow = GameObject.Find("Game_StartCanvas").GetComponent<CountDow>();
+
+        //重力を一時的に切る
+        MainPlayer = GameObject.Find("Star").GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -35,8 +40,8 @@ public class CameraMoveScript : MonoBehaviour
 
     void CameraMove()
     {
-        //重力を一時的に切る
-        var PlayerGravity = MainPlayer.GetComponent<Rigidbody>();
+        
+
 
         if (CameraChangeBool == true)
         {  
@@ -52,12 +57,10 @@ public class CameraMoveScript : MonoBehaviour
                 //ここで終了させる
                 CameraChangeBool = false;
 
-                //プレイヤーの重力をtrueにする
-                PlayerGravity.useGravity = true;
-                //PlayerMoveのスクリプトをtrueにする
-                MainPlayer.GetComponent<PlayerMove>().enabled = true;
-                //TimeのCanvasをTrueにして表示させる
-                TimeCanvas.SetActive(true);
+                //CountDow呼び出し
+                countDow.Change_true();
+
+                Invoke("tekito", 13f);
             }
         }
         
@@ -69,5 +72,15 @@ public class CameraMoveScript : MonoBehaviour
         //!は送られてくる値の反転
         MainCamera.SetActive(!MainCamera.activeSelf);
         SubCamera.SetActive(!SubCamera.activeSelf);
+    }
+
+    public void tekito()
+    {
+        //プレイヤーの重力をtrueにする
+        MainPlayer.useGravity = true;
+        //PlayerMoveのスクリプトをtrueにする
+        MainPlayer.GetComponent<PlayerMove>().enabled = true;
+        //TimeのCanvasをTrueにして表示させる
+        TimeCanvas.SetActive(true);
     }
 }

@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1036916679
+--- !u!1001 &1219102358
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -228,10 +228,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 874114128, guid: 1cb64e969aec8dd44bbddd656df273c9, type: 3}
-      propertyPath: move.Array.data[1]
-      value: Stage2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb64e969aec8dd44bbddd656df273c9, type: 3}

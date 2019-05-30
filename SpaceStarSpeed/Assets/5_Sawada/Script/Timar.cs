@@ -86,23 +86,23 @@ public class Timar : MonoBehaviour
         //別の所でシーン遷移させている
 
         //if (Input.GetKeyDown(KeyCode.S))
-        //{        
-        //      //シーン名を第１ステージのシーン名に変えて下さい
+        //{
+        //    シーン名を第１ステージのシーン名に変えて下さい
         //    if (SceneManager.GetActiveScene().name == "Stage1")
         //        SceneManager.LoadScene("result");
-        //    //シーン名を第２ステージのシーン名に変えて下さい
+        //    シーン名を第２ステージのシーン名に変えて下さい
         //    if (SceneManager.GetActiveScene().name == "Stage2")
         //        SceneManager.LoadScene("result 2");
-        //    //シーン名を第３ステージのシーン名に変えて下さい
+        //    シーン名を第３ステージのシーン名に変えて下さい
         //    if (SceneManager.GetActiveScene().name == "Stage3")
         //        SceneManager.LoadScene("result 3");
-        //    //シーン名を第４ステージのシーン名に変えて下さい
+        //    シーン名を第４ステージのシーン名に変えて下さい
         //    if (SceneManager.GetActiveScene().name == "Stage4")
         //        SceneManager.LoadScene("result 4");
-        //    //シーン名を第５ステージのシーン名に変えて下さい
+        //    シーン名を第５ステージのシーン名に変えて下さい
         //    if (SceneManager.GetActiveScene().name == "Stage5")
         //        SceneManager.LoadScene("result 5");
-        //    //シーン名を第６ステージのシーン名に変えて下さい
+        //    シーン名を第６ステージのシーン名に変えて下さい
         //    if (SceneManager.GetActiveScene().name == "Stage6")
         //        SceneManager.LoadScene("result 6");
         //}

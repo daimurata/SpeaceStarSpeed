@@ -46,7 +46,7 @@ public class SelectCanvasGo : MonoBehaviour
         StageAnimator.SetTrigger(AnimatorName[0]);
 
         //画像のアルファ値を上げる
-        BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);      
+       // BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);      
     }
 
     public void BackCanvas()
@@ -61,6 +61,6 @@ public class SelectCanvasGo : MonoBehaviour
         //星が元の場所に戻るアニメーション
         StageAnimator.SetTrigger(AnimatorName[1]);
         //画像のアルファ値を下げる
-        BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+       // BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
     }
 }

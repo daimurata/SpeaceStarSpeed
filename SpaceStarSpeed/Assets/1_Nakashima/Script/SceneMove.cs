@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
-    //シーンにただ飛ばす
-    //シーンの名前を入力
-    public string SceneName;
+    GameObject fadeScriptObj;
+    FadeScript fadeScript;
     void Start()
     {
-        
+        fadeScriptObj = GameObject.Find("FadeImage");
+        fadeScript = fadeScriptObj.GetComponent<FadeScript>();
     }
 
     // Update is called once per frame
@@ -20,19 +20,12 @@ public class SceneMove : MonoBehaviour
     {
         
     }
-    public void ButtonClick()
+    void OnCollisionEnter(Collision collision)
     {
-        //シーンの名前を表示してそのシーンに移動
-        Debug.Log(SceneName);
-        SceneManager.LoadScene(SceneName);   
-    }
-    
-    void StarMoveCenter()
-    {
-        //中央に星を移動させるアニメーションを起動 
-    }
-    void StarMoveDefault()
-    {
-        //元の場所に星を戻すアニメーション
+        if(collision.gameObject.tag == "Player")
+        {
+            //これで多分スクリプトが呼び出されている
+            fadeScript.FadeOutButton();
+        }
     }
 }

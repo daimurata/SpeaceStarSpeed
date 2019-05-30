@@ -16,6 +16,11 @@ public class Timar : MonoBehaviour
     //クリアまでの時間を計測する
     public   float timeCount { get; private set; }
     public static int timepoint;
+    public static int timepoint2;
+    public static int timepoint3;
+    public static int timepoint4;
+    public static int timepoint5;
+    public static int timepoint6;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,9 +52,26 @@ public class Timar : MonoBehaviour
          
             yield return new WaitForSeconds(1.0f);
             timeCount += 1.0f;
+            //シーン名を第１ステージのシーン名に変えて下さい
+            if (SceneManager.GetActiveScene().name == "Stage1")
             timepoint = (int)timeCount;
+            //シーン名を第２ステージのシーン名に変えて下さい
+            if (SceneManager.GetActiveScene().name == "Stage2")
+                timepoint2 = (int)timeCount;
+            //シーン名を第３ステージのシーン名に変えて下さい
+            if (SceneManager.GetActiveScene().name == "Stage3")
+                timepoint3 = (int)timeCount;
+            //シーン名を第４ステージのシーン名に変えて下さい
+            if (SceneManager.GetActiveScene().name == "Stage4")
+                timepoint4 = (int)timeCount;
+            //シーン名を第５ステージのシーン名に変えて下さい
+            if (SceneManager.GetActiveScene().name == "Stage5")
+                timepoint5 = (int)timeCount;
+            //シーン名を第６ステージのシーン名に変えて下さい
+            if (SceneManager.GetActiveScene().name == "Stage6")
+                timepoint6 = (int)timeCount;
             //Debug.Log(timeCount);
-           
+
         }
     
     }
@@ -58,11 +80,31 @@ public class Timar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //シーン遷移の条件を変えてください
         //リザルトシーンに移動する
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            SceneManager.LoadScene("result");
 
-        }
+        //別の所でシーン遷移させている
+
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{        
+        //      //シーン名を第１ステージのシーン名に変えて下さい
+        //    if (SceneManager.GetActiveScene().name == "Stage1")
+        //        SceneManager.LoadScene("result");
+        //    //シーン名を第２ステージのシーン名に変えて下さい
+        //    if (SceneManager.GetActiveScene().name == "Stage2")
+        //        SceneManager.LoadScene("result 2");
+        //    //シーン名を第３ステージのシーン名に変えて下さい
+        //    if (SceneManager.GetActiveScene().name == "Stage3")
+        //        SceneManager.LoadScene("result 3");
+        //    //シーン名を第４ステージのシーン名に変えて下さい
+        //    if (SceneManager.GetActiveScene().name == "Stage4")
+        //        SceneManager.LoadScene("result 4");
+        //    //シーン名を第５ステージのシーン名に変えて下さい
+        //    if (SceneManager.GetActiveScene().name == "Stage5")
+        //        SceneManager.LoadScene("result 5");
+        //    //シーン名を第６ステージのシーン名に変えて下さい
+        //    if (SceneManager.GetActiveScene().name == "Stage6")
+        //        SceneManager.LoadScene("result 6");
+        //}
     }
 }

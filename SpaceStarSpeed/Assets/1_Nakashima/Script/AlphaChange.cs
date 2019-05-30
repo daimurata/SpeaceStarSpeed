@@ -18,11 +18,12 @@ public class AlphaChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        a_flag = true;
         //アタッチしたImageのcolorを読み込んで変数に入れる
         red = GetComponent<Image>().color.r;
         green = GetComponent<Image>().color.g;
         blue = GetComponent<Image>().color.b;
+
+        a_flag = true;
     }
 
     // Update is called once per frame

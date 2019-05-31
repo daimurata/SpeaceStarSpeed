@@ -14,7 +14,7 @@ public class Rankingseni : MonoBehaviour
     int[] second = new int[5];
     //表示するテキスト
     [SerializeField]
-    Text[] rankingText = new Text[5];
+    GameObject[] rankingobject = new GameObject[5];
     //表示するイメージ
     [SerializeField]
     Image[] images = new Image[20];
@@ -27,7 +27,7 @@ public class Rankingseni : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < rankingText.Length; i++)
+        for (int i = 0; i < rankingobject.Length; i++)
         {
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni[i] % 60);
@@ -68,8 +68,7 @@ public class Rankingseni : MonoBehaviour
                     setnumber0(minute[4], 18, 19);
                     setnumber0(second[4], 16, 17);
                 }
-            //順位を表示
-            rankingText[i].text = (i + 1) + "位";
+           
 
         }
         for (int i = 0; i < rankingkey.Length; i++)

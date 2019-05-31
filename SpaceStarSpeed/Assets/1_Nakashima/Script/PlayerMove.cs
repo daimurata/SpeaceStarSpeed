@@ -168,7 +168,7 @@ public class PlayerMove : MonoBehaviour
             //衝突したオブジェクトを消す、漂ってる星が消える
             Destroy(col.gameObject);
             //SE
-            audioSource.PlayOneShot(SE1);
+            //audioSource.PlayOneShot(SE1);
 
             //※いらないかも
             ////ここは一定以上の速度が出ているかの判定

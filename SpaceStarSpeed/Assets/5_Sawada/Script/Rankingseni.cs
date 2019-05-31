@@ -36,7 +36,8 @@ public class Rankingseni : MonoBehaviour
 
     //切替用
     public static bool[] Change = new bool[6];
-
+    public int Changeint;
+    //このBoolを他のスクリプトで切り替えて使用しまぁす
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +45,7 @@ public class Rankingseni : MonoBehaviour
       
             for (int i = 0; i < rankingobject.Length; i++)
         {
-            if (Change[0] == true)
+            if (Changeint == 1)
             {
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni[i] % 60);
@@ -88,7 +89,7 @@ public class Rankingseni : MonoBehaviour
             }
            
             //ランキング表示
-            if (Change[1] == true)
+            if (Changeint == 2)
             {
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni2[i] % 60);
                 SetNumbers(minute[0], 2, 3);
@@ -129,7 +130,7 @@ public class Rankingseni : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
-            if (Change[2] == true)
+            if (Changeint == 3)
             {
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni3[i] % 60);
@@ -171,7 +172,7 @@ public class Rankingseni : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
-            if (Change[3] == true)
+            if (Changeint == 4)
             {
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni4[i] % 60);
@@ -213,7 +214,7 @@ public class Rankingseni : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
-            if (Change[4] == true)
+            if (Changeint == 5)
             {
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni5[i] % 60);
@@ -255,7 +256,7 @@ public class Rankingseni : MonoBehaviour
                     setnumber0(second[4], 16, 17);
                 }
             }
-            if (Change[5] == true)
+            if (Changeint == 6)
             {
                 //ランキング表示
                 minute[i] = Mathf.FloorToInt((int)rankingzyuni6[i] % 60);

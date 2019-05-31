@@ -20,8 +20,9 @@ public class PlayerMove : MonoBehaviour
     public float Pmagnitude = 0.05f;
 
     //音源
-    public SoundManager soundManager;
-    // soundManager.Soundtekito();のようなものをSEを入れたい場所に入れていく
+    public AudioClip SE1;
+
+    AudioSource audioSource;
     
     // Start is called before the first frame update
     void Start()
@@ -166,6 +167,8 @@ public class PlayerMove : MonoBehaviour
 
             //衝突したオブジェクトを消す、漂ってる星が消える
             Destroy(col.gameObject);
+            //SE
+            //audioSource.PlayOneShot(SE1);
 
             //※いらないかも
             ////ここは一定以上の速度が出ているかの判定

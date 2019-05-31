@@ -35,7 +35,7 @@ public class Rankingseni : MonoBehaviour
     int[] rankingzyuni6 = Ranking.rankingValue6;
 
     //切替用
-    public static bool[] Change = new bool[6];
+    public  bool[] Change = new bool[6];
 
 
     // Start is called before the first frame update

@@ -1049,7 +1049,7 @@ public class Ranking : MonoBehaviour
                 rankingValue2[i] = _value2;
               
                 
-                _value = change;
+                _value2 = change;
             }
             else
             {

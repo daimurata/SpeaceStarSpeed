@@ -60,7 +60,7 @@ public class CameraMoveScript : MonoBehaviour
                 //CountDow呼び出し
                 countDow.Change_true();
 
-                Invoke("tekito", 13f);
+                Invoke("tekito", 11f);
             }
         }
         

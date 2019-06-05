@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &65938318
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &158859343
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &356565315
@@ -1884,7 +1884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &375421926
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &422733594
@@ -2600,7 +2600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &432145056
@@ -3137,7 +3137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &520691984
@@ -4907,7 +4907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1003647127
@@ -5108,7 +5108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1031192817
@@ -5584,7 +5584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1110453467
@@ -5867,7 +5867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1240846297
@@ -6806,7 +6806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1421088651
@@ -7208,7 +7208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1455155135
@@ -8012,7 +8012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1668303487
@@ -8414,7 +8414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1718477712
@@ -8935,7 +8935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1847109314
@@ -9834,7 +9834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &2076996512
@@ -10035,7 +10035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &2109137455

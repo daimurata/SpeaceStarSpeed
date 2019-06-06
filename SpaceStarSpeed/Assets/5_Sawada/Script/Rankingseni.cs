@@ -41,9 +41,10 @@ public class Rankingseni : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-      
-            for (int i = 0; i < rankingobject.Length; i++)
+    {  //ランキングを初期化
+        //PlayerPrefs.DeleteAll();
+
+        for (int i = 0; i < rankingobject.Length; i++)
         {
             if (Changeint == 1)
             {

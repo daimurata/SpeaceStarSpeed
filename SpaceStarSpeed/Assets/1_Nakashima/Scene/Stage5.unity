@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &120299101
@@ -1646,7 +1646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &399212598
@@ -2562,7 +2562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &543414446
@@ -3165,7 +3165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &652303150
@@ -3559,7 +3559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &831498871
@@ -6843,7 +6843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1716463954
@@ -7118,7 +7118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1753591406
@@ -8011,7 +8011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e773bfe721d3a27438dca02718e98e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  planet: {fileID: 951381862}
   coefficient: 1
   a: 0.1
 --- !u!135 &1870412466

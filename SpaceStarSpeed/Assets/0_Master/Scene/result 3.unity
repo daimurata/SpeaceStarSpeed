@@ -3709,6 +3709,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 874114128, guid: 1cb64e969aec8dd44bbddd656df273c9, type: 3}
+      propertyPath: move.Array.data[1]
+      value: Stage3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb64e969aec8dd44bbddd656df273c9, type: 3}
 --- !u!224 &1821658195 stripped

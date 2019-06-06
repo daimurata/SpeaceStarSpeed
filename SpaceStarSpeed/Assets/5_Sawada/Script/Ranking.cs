@@ -77,8 +77,7 @@ public class Ranking : MonoBehaviour
         {
             point6 = 3600;
         }
-        //ランキングを初期化
-       //PlayerPrefs.DeleteAll();
+        
         //ランキング呼び出し
         GetRanking();
         //ランキングを書き込む
@@ -938,8 +937,13 @@ public class Ranking : MonoBehaviour
                     images[19].color = GetAlphaColor(images[19].color);
                 }
             }
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            //ランキングを初期化
+            PlayerPrefs.DeleteAll();
         }
+
+    }
 
             //スプライトを表示
             void SetNumbers(int sec, int val1,int val2)
@@ -1049,7 +1053,7 @@ public class Ranking : MonoBehaviour
                 rankingValue2[i] = _value2;
               
                 
-                _value = change;
+                _value2 = change;
             }
             else
             {

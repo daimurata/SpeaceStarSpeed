@@ -5992,12 +5992,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectCanvas: {fileID: 1192899560}
+  SelectCanvasEvent: {fileID: 1192899565}
   Main: {fileID: 2070588615}
   StageAnimator: {fileID: 216122017}
   AnimatorName:
   - grayGo
   - grayreGo
-  BackImage: {fileID: 0}
 --- !u!1 &216789346
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,7 +10080,6 @@ GameObject:
   - component: {fileID: 365844723}
   - component: {fileID: 365844721}
   - component: {fileID: 365844720}
-  - component: {fileID: 365844722}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -10170,18 +10169,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &365844722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365844719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2c2acc73662247b903a72f04b146b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &365844723
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11025,7 +11012,6 @@ GameObject:
   - component: {fileID: 386141676}
   - component: {fileID: 386141674}
   - component: {fileID: 386141673}
-  - component: {fileID: 386141675}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -11115,18 +11101,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &386141675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386141672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2c2acc73662247b903a72f04b146b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &386141676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22212,7 +22186,6 @@ GameObject:
   - component: {fileID: 786258207}
   - component: {fileID: 786258205}
   - component: {fileID: 786258204}
-  - component: {fileID: 786258206}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -22302,18 +22275,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &786258206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786258203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2c2acc73662247b903a72f04b146b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &786258207
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26192,12 +26153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectCanvas: {fileID: 1299658901}
+  SelectCanvasEvent: {fileID: 1299658906}
   Main: {fileID: 2070588615}
   StageAnimator: {fileID: 929921256}
   AnimatorName:
   - iceGo
   - icereGo
-  BackImage: {fileID: 0}
 --- !u!1 &931726323
 GameObject:
   m_ObjectHideFlags: 0
@@ -27633,12 +27594,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectCanvas: {fileID: 117858212}
+  SelectCanvasEvent: {fileID: 117858214}
   Main: {fileID: 2070588615}
   StageAnimator: {fileID: 974884706}
   AnimatorName:
   - egiptGo
   - egiptreGo
-  BackImage: {fileID: 0}
 --- !u!1 &976656291
 GameObject:
   m_ObjectHideFlags: 0
@@ -39147,12 +39108,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectCanvas: {fileID: 1658465777}
+  SelectCanvasEvent: {fileID: 1658465782}
   Main: {fileID: 2070588615}
   StageAnimator: {fileID: 1422199469}
   AnimatorName:
   - orangeGo
   - orangereGo
-  BackImage: {fileID: 0}
 --- !u!1 &1422903215
 GameObject:
   m_ObjectHideFlags: 0
@@ -43513,7 +43474,6 @@ GameObject:
   - component: {fileID: 1605184879}
   - component: {fileID: 1605184878}
   - component: {fileID: 1605184877}
-  - component: {fileID: 1605184876}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -43521,18 +43481,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1605184876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605184874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2c2acc73662247b903a72f04b146b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1605184877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48807,7 +48755,6 @@ GameObject:
   - component: {fileID: 1826802023}
   - component: {fileID: 1826802021}
   - component: {fileID: 1826802020}
-  - component: {fileID: 1826802022}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -48897,18 +48844,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1826802022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826802019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2c2acc73662247b903a72f04b146b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &1826802023
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49131,12 +49066,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectCanvas: {fileID: 218845585}
+  SelectCanvasEvent: {fileID: 218845590}
   Main: {fileID: 2070588615}
   StageAnimator: {fileID: 1829508427}
   AnimatorName:
   - forestGo
   - forestreGo
-  BackImage: {fileID: 0}
 --- !u!1 &1834212760
 GameObject:
   m_ObjectHideFlags: 0
@@ -50355,12 +50290,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectCanvas: {fileID: 1030351555}
+  SelectCanvasEvent: {fileID: 1030351560}
   Main: {fileID: 2070588615}
   StageAnimator: {fileID: 1868600229}
   AnimatorName:
   - havayGo
   - havayreGo
-  BackImage: {fileID: 0}
 --- !u!1 &1870248860
 GameObject:
   m_ObjectHideFlags: 0
@@ -55386,7 +55321,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070588609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1e762ce0540dad43986c3b6d56d18ec, type: 3}
   m_Name: 
@@ -55825,7 +55760,6 @@ GameObject:
   - component: {fileID: 2095833134}
   - component: {fileID: 2095833132}
   - component: {fileID: 2095833131}
-  - component: {fileID: 2095833133}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -55915,18 +55849,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &2095833133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095833130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2c2acc73662247b903a72f04b146b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &2095833134
 CanvasRenderer:
   m_ObjectHideFlags: 0

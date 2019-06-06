@@ -8,15 +8,13 @@ public class SelectCanvasGo : MonoBehaviour
 {
     //Yes,Noの選択肢の表示、各ステージごとに用意してアタッチしていこう（）
     public GameObject SelectCanvas;
+    public EventSystem SelectCanvasEvent;
     //今のキャンバス（ステージ選択）
     public Canvas Main;
-
     //ステージにあった星をアタッチ
     public Animator StageAnimator;
     //AnimetorのBoolにあった名前を入れる（こうしないと別々でスクリプトを組まないといけなくなる）
     public string[] AnimatorName = new string[2];
-    //MainCanvasを覆い隠す為に使用します
-    public Image BackImage;
 
     // Start is called before the first frame update
     void Start()
@@ -35,32 +33,52 @@ public class SelectCanvasGo : MonoBehaviour
     }
     public void ChangeInput()
     {
-        var eventSystem = Main.GetComponent<EventSystem>();
+        //星を選ぶシーンからYES、NOを選択するやつに移行するための
 
-        //YES/NOの選択肢をSetActive＝Trueにして、その選択によってイベントを加える
-        SelectCanvas.SetActive(true);
-        //Mainの方のCanvasを操作できないようにする
-        eventSystem.enabled = false;
+        var eventSystem = Main.GetComponent<EventSystem>();
 
         //星が前に出てくるアニメーション
         StageAnimator.SetTrigger(AnimatorName[0]);
 
-        //画像のアルファ値を上げる
-        //BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);      
+        //YES/NOの選択肢をSetActive＝Trueにして、その選択によってイベントを加える
+        SelectCanvas.SetActive(true);
+        //YESNOを操作できないようにする
+        SelectCanvasEvent.enabled = false;
+        //呼び出し
+        Invoke("CanvasActivefalse", 4f);
+        //Mainの方のCanvasを操作できないようにする
+        eventSystem.enabled = false;
+    }
+    void CanvasActivefalse()
+    {
+        //YESNOの操作を可能にする
+        SelectCanvasEvent.enabled = true;
     }
 
     public void BackCanvas()
     {
-        var eventSystem = Main.GetComponent<EventSystem>();
+        //YES、NOの選択肢から星を選ぶやつに移行するための
 
-        //現時点のCanvasをfalseにする
-        SelectCanvas.SetActive(false);
-        //Mainキャンバスを動かせるようにする（しないとボタンが選択できなくなる）
-        eventSystem.enabled = true;
+        var eventSystem = Main.GetComponent<EventSystem>();
 
         //星が元の場所に戻るアニメーション
         StageAnimator.SetTrigger(AnimatorName[1]);
-        //画像のアルファ値を下げる
-        //BackImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+
+        //現時点のCanvasをfalseにする
+        SelectCanvas.SetActive(false);
+
+        Invoke("CanvasActivetrue", 4f);
+
+        //Mainキャンバスを動かせるようにする（しないとボタンが選択できなくなる）
+        //eventSystem.enabled = true;
+
+        
+    }
+    void CanvasActivetrue()
+    {
+        var eventSystem = Main.GetComponent<EventSystem>();
+
+        //Mainキャンバスを動かせるようにする（しないとボタンが選択できなくなる）
+        eventSystem.enabled = true;
     }
 }

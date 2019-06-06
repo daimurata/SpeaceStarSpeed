@@ -16,6 +16,8 @@ public class SelectCanvasGo : MonoBehaviour
     //AnimetorのBoolにあった名前を入れる（こうしないと別々でスクリプトを組まないといけなくなる）
     public string[] AnimatorName = new string[2];
 
+    bool canvasmove = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +28,12 @@ public class SelectCanvasGo : MonoBehaviour
     void Update()
     {
         //×ボタンでも戻ることができるようにするため
-        if (Input.GetButtonDown("Cancel"))
+        if (canvasmove)
         {
-            BackCanvas();
+            if (Input.GetButtonDown("Cancel"))
+            {
+                BackCanvas();
+            }
         }
     }
     public void ChangeInput()
@@ -53,6 +58,8 @@ public class SelectCanvasGo : MonoBehaviour
     {
         //YESNOの操作を可能にする
         SelectCanvasEvent.enabled = true;
+        //bool
+        canvasmove = true;
     }
 
     public void BackCanvas()

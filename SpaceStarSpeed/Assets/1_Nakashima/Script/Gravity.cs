@@ -20,7 +20,7 @@ public class Gravity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        EX.SetActive(false);
     }
 
     // Update is called once per frame

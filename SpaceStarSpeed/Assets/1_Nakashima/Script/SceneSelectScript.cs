@@ -18,7 +18,7 @@ public class SceneSelectScript : MonoBehaviour
     void Update()
     {
         //呼ぶ
-        StageSelect();      
+        StageSelect();   
     }
     void StageSelect()
     {

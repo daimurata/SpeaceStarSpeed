@@ -30,7 +30,7 @@ public class PlayerMove : MonoBehaviour
         //自キャラのオブジェクト取得
         //player = GetComponent<GameObject>();
 
-        
+        audioSource = GetComponent<AudioSource>();
 
         //重力
         rb = this.GetComponent<Rigidbody>();
@@ -168,7 +168,8 @@ public class PlayerMove : MonoBehaviour
             //衝突したオブジェクトを消す、漂ってる星が消える
             Destroy(col.gameObject);
             //SE
-            //audioSource.PlayOneShot(SE1);
+            audioSource.PlayOneShot(SE1);
+            Debug.Log(SE1);
 
             //※いらないかも
             ////ここは一定以上の速度が出ているかの判定

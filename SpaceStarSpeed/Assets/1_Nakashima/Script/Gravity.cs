@@ -15,10 +15,12 @@ public class Gravity : MonoBehaviour
     public float a;
 
     bool isActive = false;
+
+    public GameObject EX;
     // Start is called before the first frame update
     void Start()
     {
-
+        EX.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class Gravity : MonoBehaviour
     {
         if(col.gameObject.tag == "Finish")
         {
+            EX.SetActive(true);
             Destroy(gameObject);
         }   
     }
@@ -51,6 +54,7 @@ public class Gravity : MonoBehaviour
         //Tag名きまってませーん、仮でPlayer
         if(other.gameObject.tag == "Player")
         {
+            EX.SetActive(true);
             isActive = true;
         }
     }
